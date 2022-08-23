@@ -15,7 +15,7 @@
 <body>
 <div class="grid-conteiner_index"><!--GRID CONTEINER -->
 <?php session_start();
-  	  include('conexao.php');
+  	  include('conecta.php');
       include('navbarra.php');/* GRID ITEM, pagina externa navbarra.php */
 ?>  
 <header id="header_cabec"><!-- GRID ITEM cabecalho -->
@@ -43,7 +43,7 @@
 <!--            <img src="imgs/terra_250px.png" alt="Terra imagem centro" id="img_centro">-->
         </div>
         <div class="divs_main" id="div_img_animes" onMouseOver="mudaFoto('imgs/animes_text_centro.png')" onMouseOut="mudaFoto('imgs/terra_250px.png')">
-            <a href="https://localhost/dtudo/animes.php" target="_new" title="Pagina sobre Animes em Geral">
+            <a href="/lazer/animacao/https://localhost/dtudo/animacao.php" target="_new" title="Pagina sobre Animes em Geral">
                 <img src="imgs/animes_personagem_400px.png" id="img_animes" title="Todos os Animes que já assisti"> </a>
         </div>
         <div class="divs_main" id="div_img_musicas" onMouseOver="mudaFoto('imgs/musica_text_centro.png')" onMouseOut="mudaFoto('imgs/terra_250px.png')">

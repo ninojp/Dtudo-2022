@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document criado: 30/04/22 com os dados do geralStyle.css anterior*/
+
+/* Definiçoes gerais para TODOs os arquivos do site */
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: #0d6efd;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	align-content: center;
+	background-image: url("../imgs/mmwDYkPUi3ZF55cMh5qzzL5j.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	z-index: -110;
+	color: #0d6efd;
+	background-color: #000000;
+	margin-top: 35px;
+}
+.table {
+    color: #0d6efd;
+}
+
+/*AS DEFINIÇÕES DAS CLASSES DOS BOTÔES ANTIGOS*/
+.bt_fechar {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.meu_btn {/*classe somente para botoes em geral*/
+    background-color: rgba(255,255,255,0.9); 
+    font-size: 10pt;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,1.00);
+    padding: 0px 5px;
+    color: #000000;
+}
+.meu_btn:hover {
+    background-color: rgba(0,0,0,0.9); 
+    color: #ffffff;
+    font-size: 10pt;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(13,0,157,0.9);
+    text-shadow: 0px 0px 1px #ffffff;
+}
+.red_btn {
+	display: flex;
+    background-color: rgba(185,0,3,0.94); 
+    font-family: 'Shojumaru', cursive;
+    color: #000000;
+    font-size: 8pt;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(185,0,3,0.94);
+    padding: 0px 5px;
+}
+.red_btn:hover {
+    display: flex;
+    background-color: rgba(0,0,0,0.9); 
+    font-family: 'Shojumaru', cursive;
+    color: #ffffff;
+    font-size: 8pt;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(185,0,3,0.94);
+    text-shadow: 0px 0px 1px #ffffff;
+}
+
+/*AS DEFINIÇÕES DOS FILDSETs ANTIGOS*/
+fieldset {
+	border-color: rgba(86,113,252,1.00);
+	min-width: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,1.00);
+    border-radius: 10px;
+	border: 2px solid rgba(86,113,252,1.00);
+}
+legend {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(77,112,255,1.00);
+    text-shadow: 0px 0px 2px #000000;
+    border-radius: 10px;
+    padding: 0px 8px;
+    border: 2px solid rgba(86,113,252,1.00);
+	text-align: center;
+}
+.legend2 {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(77,112,255,1.00);
+    text-shadow: 0px 0px 2px #000000;
+    border-radius: 10px;
+    padding: 0px 8px;
+    border: 2px solid rgba(86,113,252,1.00);
+	text-align: center;
+}
+fieldset label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(96, 96, 255);
+}
+fieldset input {
+    min-width: 200px;
+    /* background-color: #727272; */
+}
+fieldset textarea {
+    min-width: 300px;
+    /* background-color: #727272; */
+}
+fieldset input:hover {
+    background-color: white;
+}
+/* Definiçoes gerais para TODOs os arquivos do site */
+
+#form_busca {
+	margin-top: 0px;
+	padding: 0px;
+    max-height: 30px;
+    border: none;
+}
+ul .menu_pag {
+	margin: 0px;
+	padding: 0px;
+}
+li .menu_pag {
+	margin: 0px;
+	padding: 0px;
+	color: #0d6efd;
+}
+/*ALTERADO PARA TESTE TEM Q IMPLEMENTAR ESTA CLASSE AINDA*/
+.navbar_meu {
+	margin-top: 0px;
+	padding: 0px;
+	color: #0d6efd !important;
+    font-weight: 600;
+}
+.nav-link_meu {
+	padding: 0rem;
+}
+/*Classe de FUNDO das DIVs anime_detales e outras */
+.fundo_dark {
+	background-color: #373636;
+	color: #0d6efd;
+}
+.fundo_transp {
+	background-color: transparent;
+}
+.fundo_black_80 {
+	background-color: rgba(0,0,0,0.8);
+}
+.fundo_black_60 {
+	background-color: rgba(0,0,0,0.6);
+}
+.fundo_black_40 {
+	background-color: rgba(0,0,0,0.4);
+}
+.fundo_black_20 {
+	background-color: rgba(0,0,0,0.2);
+}
+/*ALGO QUE AINDA NEM EU SEI*/
+.destaque {
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(77,112,255,1.00);
+}
+/* DIVs E IMAGENS DO LISTAR_ANIMES */
+.thumb_div {
+    max-height: 320px;
+    max-width: 195px;
+    margin: 2rem 0rem 0rem 1.5rem;
+}
+.thumb_img {
+    height:270px;
+    width:190px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255,1.00);
+}
+.thumb_img:hover{
+    box-shadow: 0px 0px 10px #ffd700;
+}
+.thumb_div:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+.span_nome {
+    position: relative;
+    top: -23px; left: 10px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.9);
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.link_sem_ {
+    text-decoration: none;
+}
+.fonte_small {
+    font-weight: 400;
+    font-size: 10pt;
+}
+/* BANNER GIRLs DA LATERAL DIREITA */
+.banner_lat_direita {
+	display: block;
+	position: fixed;
+	top: 4rem;
+	right: 1rem;
+	max-width: 290px;
+}
+/* BOTÕES DA PAGINA INSERIR ANIMES */
+.buttons_inserir {
+    display: block;
+	position: fixed;
+	top: 15rem;
+	left: 19rem;
+    max-width: 250px;
+}
+.buttons_inserir_imgs {
+    display: block;
+	position: fixed;
+	top: 19rem;
+	right: 19rem;
+    max-width: 250px;
+}
+/*BLOCO DE CONTROLE DO VIDEO DO DARAGÃO*/
+.video_dragao {
+	position: fixed;
+	top: 0px;
+	left: 400px;
+	width: 100%;
+	z-index: -1;	
+}
+/* Paragrafo em destaque do buscar, resultado */
+.destaque {
+    color: #ffd700;
+    font-weight: 500;
+}
+/* Texto em branco */
+.branco{
+    color: #ffffff;
+    font-weight: 700;
+}
