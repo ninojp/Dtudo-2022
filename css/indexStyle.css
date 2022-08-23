@@ -52,13 +52,13 @@ body {
 #div_text_dir {
     display: flex;
 }
-
-#main_princ { /* Configurações do MAIN da pagina */
+/* Configurações do GRID MAIN da pagina */
+#main_princ { 
     grid-area: main;
     display: grid;
-    grid-template-areas: 'btc ... anime'
+    grid-template-areas: '... btc ...'
                          '... globo ...'
-                         'ti ... musica';
+                         'ti ... lazer';
     grid-template-columns: 17vw 17vw 17vw;
     grid-template-rows: 25vh 25vh 25vh;
     align-content: center;
@@ -77,14 +77,16 @@ body {
     background-size: cover;
 */
 }
+/* Configuraçoes das DIVS do MAIN */
+.divs_main { 
+    display: grid;
+}
 #img_fundo_main {
     width: 100%;
     border-radius: 25px;    
 }
-.divs_main { /* Configuraçoes das DIVS do MAIN */
-    display: grid;
-    
-}
+
+/* Configuraçoes da DIV do BTC */
 #div_img_bitcoin {
     display: grid;
     grid-area: btc;
@@ -93,6 +95,8 @@ body {
 #img_bitcoin {
     width: 100%;
 }
+
+/* Configuraçoes da DIV do TI */
 #div_img_ti {
     display: grid;
     grid-area: ti;
@@ -102,6 +106,7 @@ body {
     width: 100%;
     border-radius: 40%;
 }
+/* Configuraçoes da DIV do CENTRO GLOBO */
 #div_img_centro {
     display: grid;
     grid-area: globo;
@@ -110,18 +115,10 @@ body {
 #img_centro {
     width: 100%;
 }
-#div_img_animes {
-    display: grid;
-    grid-area: anime;
-    max-width: 400px;
-}
-#img_animes {
-    width: 100%;
-
-}
+/* Configuraçoes da DIV do LAZER */
 #div_img_musicas {
     display: grid;
-    grid-area: musica;
+    grid-area: lazer;
     max-height: 300px;
 }
 #img_musicas {
