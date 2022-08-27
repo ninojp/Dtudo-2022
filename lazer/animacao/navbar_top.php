@@ -13,7 +13,7 @@ include_once('conecta.php');
 	<div class="container d-flex">
    		<!--DIV do brand - DA IMAGEM DE LOGO-->
        	<div class="">
-            <a class="navbar-brand me-0" href="index.php">
+            <a class="navbar-brand me-0" href="../../index.php">
                 <img src="imgs/Logo-Dtudo_102x40.png" style="max-height: 45px;"></a>
        	</div>
         <!----- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------>
