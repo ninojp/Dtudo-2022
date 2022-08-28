@@ -1,0 +1,16 @@
+/* Crie 27/08/22, um novo CSS para meu site para implementar novas tecnicas aprendidas no cruso PHP Developer - CELKE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Variável GLOBAL do css */
+:root{
+    --main-color: #000;
+    --font-color: #fff;
+}
+body {
+    background-color: var(--main-color);
+    color: var(--font-color);
+}

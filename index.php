@@ -8,8 +8,10 @@
     <meta http-equiv="pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dtudo 2021</title>
-    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/geralStyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/indexStyle.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/geralStyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/StyleGeral.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
 <body>
