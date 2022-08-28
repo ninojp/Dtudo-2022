@@ -1,4 +1,9 @@
 /* Crie 27/08/22, um novo CSS para meu site para implementar novas tecnicas aprendidas no cruso PHP Developer - CELKE */
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +13,42 @@
 /* Variável GLOBAL do css */
 :root{
     --main-color: #000;
-    --font-color: #fff;
+    --font-color: #0d6efd;
+    --linkActive: #ffd700;
+    --linkVisited: rgb(4, 9, 170);
+    --firstColor: #fff;
+
 }
 body {
     background-color: var(--main-color);
     color: var(--font-color);
+}
+/* Tag NAV com o ID=nav_barra  */
+nav ul, a{
+    text-decoration: none;
+    list-style: none;
+}
+/* DIV com ID=CONTAINER */
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1366px;
+    padding: 0px 10px;
+    margin: auto;
+    border: #fff dotted 1px;
+}
+#container #list_menu{
+    display: flex;
+    align-items: center;
+}
+
+/* DIV ID=img_logo_peq do Logo e Lista do Login */
+#img_logo_peq{
+    display: flex;
+    align-items: center;
+}
+#img_logo_peq #list_login{
+    display: flex;
+    align-items: center;
 }

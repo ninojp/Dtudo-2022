@@ -7,11 +7,17 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dtudo 2021</title>
+    <title>Dtudo 2022</title>
     <!-- <link rel="stylesheet" type="text/css" href="css/indexStyle.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/geralStyle.css"> -->
     <link rel="stylesheet" type="text/css" href="css/StyleGeral.css">
+    <!-- AWESOME-FONTs com a CDNjs -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Link do Google Fonts (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Meu favicon atual -->
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
 <body>
