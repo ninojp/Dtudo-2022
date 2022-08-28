@@ -10,18 +10,23 @@
                 <img class="img_logo_peq" src="imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno">
             </a>
             <ul id="list_login">
-                <?php  if (empty($_SESSION['id'])) { ?> 
-                    <li class="li_logins"><a href="login.php" alt="Link Log" title="Link Log">Fazer Login</a></li>
+                <?php  if (empty($_SESSION['id'])) { ?>
+                    <a href="login.php" alt="Link Log" title="Link Log">
+                        <li class="li_logins">Fazer Login</li></a>
                 <?php } else {
                     if($_SESSION['adm']==0) {
                     $consulta_user=$conexao->query("SELECT nome FROM usuarios WHERE id_user='$_SESSION[id]'");
                     $exibe_user=$consulta_user->fetch(PDO::FETCH_ASSOC);
                 ?>
-                    <li class="li_logins"><a href="areaUser.php"><?php echo $exibe_user['nome']; ?></a></li>
-                    <li class="li_logins"><a href="sair.php"> Logout</a></li>
+                    <a href="areaUser.php">
+                        <li class="li_logins"><?php echo $exibe_user['nome']; ?></li></a>
+                    <a href="sair.php">
+                        <li class="li_logins">Logout</li></a>
                 <?php } else { ?>
-                        <li class="li_logins"><a href="adm.php"> NinoJP</a></li>
-                        <li class="li_logins"><a href="sair.php"> Logout</a></li>
+                    <a href="adm.php">
+                        <li class="li_logins">NinoJP</li></a>
+                    <a href="sair.php">
+                        <li class="li_logins">Logout</li></a>
                 <?php }
                 }?>
             </ul>
