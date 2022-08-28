@@ -24,9 +24,6 @@
         <div id="div_text_esq">
             <img id="img_logo_grand" src="imgs/Logo_Dtudo_2022-300p.png" alt="Logo Dtudo" title="Imagem do Logo Dtudo">
         </div>
-        <div id="div_img_logo">
-            
-        </div>
         <div id="div_text_dir">
             Mais Informações estaram aqui!<br>
             Uma breve descrição do site!
@@ -34,26 +31,25 @@
 </header>
 <main id="main_princ"><!--GRID ITEM e também um GRID CONTEINER-->
 <!--    <img id="img_fundo_main" src="imgs/software_1200px.jpg">-->
+        <div class="divs_main" id="div_img_centro" >
+            <a href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
+            <img src="imgs/SlaveMoney.png" id="img_bitcoin" alt="Escravo do Dinheiro" title="Informação Sobre como ganhar dinheiro"></a>
+        </div>
         <div class="divs_main" id="div_img_bitcoin" onMouseOver="mudaFoto('imgs/bitcoin_text_centro.png')" onMouseOut="mudaFoto('imgs/terra_250px.png')" >
-            
         </div>
         <div class="divs_main" id="div_img_ti" onMouseOver="mudaFoto('imgs/TI_text_centro.png')" onMouseOut="mudaFoto('imgs/terra_250px.png')">
             <a href="https://localhost/dtudo/t_i.php" target="_new" title="Pagina sobre Tecnologia da Informação">
                 <img src="imgs/TI_link.png" id="img_ti" alt="T.I" title="Informação sobre Tecnologia da Informação"></a>
         </div>
-        <div class="divs_main" id="div_img_centro" >
-            <a href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
-            <img src="imgs/SlaveMoney.png" id="img_bitcoin" alt="Escravo do Dinheiro" title="Informação Sobre como ganhar dinheiro"></a>
-        </div>
         <div class="divs_main" id="div_img_musicas" onMouseOver="mudaFoto('imgs/musica_text_centro.png')" onMouseOut="mudaFoto('imgs/terra_250px.png')">
-            <a href="https://localhost/dtudo/lazer/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral">
+            <a href="https://localhost/dtudo/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral">
                 <img src="imgs/animes_personagem_400px.png" id="img_animes" alt="Animes" title="Todos os Animes que já assisti"></a>
         </div>
     </main>
     <?php include('rodape.php'); ?>
-<script>
-//    function mudaFoto (foto) { document.getElementById("img_centro").src=foto; }
-</script>
+<!-- <script>
+    function mudaFoto (foto) { document.getElementById("img_centro").src=foto; }
+</script> -->
 </div>
 </body>
 </html>
