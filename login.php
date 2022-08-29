@@ -9,8 +9,8 @@
 	<link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
 <body>
-<?php session_start();
-  	  include('conexao.php');
+<?php 
+  	  include('conecta.php');
       include('navbarra.php');/* GRID ITEM, pagina externa navbarra.php */
       include('header.php');  ?> <!--GRID ITEM -->
 <main id="main_princ"><!--GRID ITEM -->

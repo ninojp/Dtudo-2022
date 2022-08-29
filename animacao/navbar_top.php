@@ -13,7 +13,7 @@ include_once('conecta.php');
 	<div class="container d-flex">
    		<!--DIV do brand - DA IMAGEM DE LOGO-->
        	<div class="">
-            <a class="navbar-brand me-0" href="../../index.php">
+            <a class="navbar-brand me-0" href="../index.php">
                 <img src="imgs/Logo-Dtudo_102x40.png" style="max-height: 45px;"></a>
        	</div>
         <!----- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------>
@@ -59,7 +59,7 @@ include_once('conecta.php');
         	<div class="collapse navbar-collapse" id="navbar_top">
                     <!--BLOCO PARA ACESSO RAPIDO DE INSERÇÃO E EXCLUSÃO-->
                     <div class="nav-item ps-5">
-                        <a class="nav-link" href="index.php">Animes</a>
+                        <a class="nav-link" href="animacao.php">Animes</a>
                     </div>
                     <div class="nav-item">
                         <a class="nav-link" href="series.php">Séries</a>

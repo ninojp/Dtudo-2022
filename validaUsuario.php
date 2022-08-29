@@ -1,9 +1,9 @@
 <?php
 session_start();
-include('conexao.php');
+include('conecta.php');
 $recebe_email = $_POST['email'];
 $recebe_senha = $_POST['senha']; 
-$consulta = $conexao->query("SELECT id_user, email, senha, adm FROM usuarios WHERE email='$recebe_email' AND senha='$recebe_senha'");
+$consulta = $conecta->query("SELECT id_user, email, senha, adm FROM usuario WHERE email='$recebe_email' AND senha='$recebe_senha'");
 if ($consulta->rowCount()==1) {
 	$exibeUser=$consulta->fetch(PDO::FETCH_ASSOC);
 	if ($exibeUser['adm']==0) {

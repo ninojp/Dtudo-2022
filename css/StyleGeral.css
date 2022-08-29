@@ -20,9 +20,10 @@ font-family: 'Ubuntu', sans-serif; */
 
 }
 body {
+    display: block;
     background-color: var(--main-color);
     color: var(--font-color);
 }
 #header{
-    padding-top: 50px;
+    padding-top: 60px;
 }
