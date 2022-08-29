@@ -1,0 +1,84 @@
+/* CSS exclusivo para esta Página NAVBARRA.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Variável GLOBAL do css */
+:root{
+    --main-color: #000;
+    --font-color: #0d6efd;
+    --linkActive: #ffd700;
+    --linkVisited: rgb(4, 9, 170);
+    --firstColor: #fff;
+    --transp: transparent;/*Testar depois*/
+
+}
+body {
+    background-color: var(--main-color);
+    color: var(--font-color);
+
+}
+
+/* Tag NAV com o ID=nav_barra  */
+#nav_barra{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Cinzel Decorative', Ubuntu;
+    /* border: #ffd700 dotted 1px; */
+}
+#nav_barra ul a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color);
+}
+
+/* DIV com ID=CONTAINER */
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1366px;
+    padding: 0px 10px;
+    margin: auto;
+    border: #fff dotted 1px;
+}
+#container #list_menu{
+    display: flex;
+    align-items: center;
+}
+#list_menu li{
+    margin-left: 1rem;
+}
+
+/* DIV ID=img_logo_peq do Logo e Lista do Login */
+#img_logo_peq{
+    display: flex;
+    align-items: center;
+}
+#img_logo_peq #list_login{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+#list_login li{
+    margin-left: 1rem;
+}
+#list_login a:active{
+    color: var(--linkActive);
+}
+#menu-btn{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+@media (max-width: 1300px) {
+    #menu-btn{
+        display: block;
+    }
+
+    
+}
