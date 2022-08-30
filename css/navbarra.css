@@ -25,7 +25,7 @@
     border: #fff dotted 1px;
 }
 /* DIV ID=img_logo_peq do Logo e Lista do Login */
-#div_logo_ul{
+#div_logo_uls{
     display: flex;
     align-items: center;
 }
@@ -35,30 +35,31 @@
     font-size: 0.9rem;
     font-weight: 400;
 }
-a :active{
+
+/* Classe dos LINKs das UL, login e menu */
+.link_login :active{
     color: var(--linkActive);
 }
-/* .link_btn :active{
-    color: var(--linkActive);
-} */
-.li_logins{
-    margin-left: 2rem;
+.li_login{
+    margin-left: 1.5rem;
 }
 
 /* UL dentro da div_container */
-#div_container ul{
+#ul_menu{
     display: flex;
     align-items: center;
 }
-#list_menu li{
-    margin-left: 1rem;
+#ul_menu li{
+    margin-right: 2em;
 }
+/* Botão q vai aparecer somente quando a tela for menor que: 997px */
 #menu-btn{
     display: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 }
-@media (max-width: 1300px) {
+/* MEDIA QUERY para responsividade em telas menores que: 997px */
+@media (max-width: 390px) {
     #menu-btn{
         display: block;
     }
