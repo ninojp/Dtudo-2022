@@ -13,7 +13,10 @@
     list-style: none;
     color: var(--font-color);
 }
-
+/* ID= nav_barra ul a -> dos LINKs das UL, login e menu */
+#nav_barra ul a :active{
+    color: var(--linkActive);
+}
 /* DIV com ID=CONTAINER */
 #div_container{
     display: flex;
@@ -24,7 +27,7 @@
     margin: auto;
     border: #fff dotted 1px;
 }
-/* DIV ID=img_logo_peq do Logo e Lista do Login */
+/* DIV ID=div_logo_uls do IMG=Logo e UL=Lista do Login */
 #div_logo_uls{
     display: flex;
     align-items: center;
@@ -32,13 +35,8 @@
 #ul_login{
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
-}
-
-/* Classe dos LINKs das UL, login e menu */
-.link_login :active{
-    color: var(--linkActive);
 }
 .li_login{
     margin-left: 1.5rem;
@@ -53,16 +51,61 @@
     margin-right: 2em;
 }
 /* Botão q vai aparecer somente quando a tela for menor que: 997px */
-#menu-btn{
+#div_btn{
     display: none;
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
 }
-/* MEDIA QUERY para responsividade em telas menores que: 997px */
-@media (max-width: 390px) {
-    #menu-btn{
-        display: block;
-    }
 
-    
+/* MEDIA QUERY para responsividade em telas menores que: 997px */
+@media (max-width: 590px) {
+    #div_btn{
+        display: block;
+        z-index: 999;
+        padding-right: 2rem;
+    } 
+    #icon_menu.active::before{
+        content: "\f00d";
+    }
+    #ul_login{
+        background-color: var(--main-color);
+        position: fixed;
+        height: 6vh;
+        width: 35vw;
+        left: -250px;
+        top: 35px;
+        /* border: #fff dotted 1px; */
+    }
+    #ul_login.active{
+        background-color: var(--main-color);
+        position: fixed;
+        height: 6vh;
+        width: 30vw;
+        left: 0px;
+        top: 35px;
+        transition: all 0.3s ease;
+        /* border: #fff dotted 1px; */
+    }
+    #ul_menu{
+        background-color: var(--main-color);
+        position: fixed;
+        height: 6vh;
+        width: 45vw;
+        right: -350px;
+        top: 35px;
+        /* border: #fff dotted 1px; */
+    }
+    #ul_menu.active{
+        background-color: var(--main-color);
+        position: fixed;
+        height: 6vh;
+        width: 45vw;
+        right: 0px;
+        top: 35px;
+        transition: all 0.3s ease;
+        /* border: #fff dotted 1px; */
+    }
+    #ul_menu li{
+        margin-right: 1em;
+    }
 }

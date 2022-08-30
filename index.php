@@ -30,13 +30,12 @@
             <img id="img_logo_grand" src="imgs/Logo_Dtudo_2022-300p.png" alt="Logo Dtudo" title="Imagem do Logo Dtudo">
         </div>
         <div id="div_dir">
-            Mais Informações estaram aqui!<br>
-            Uma breve descrição do site!
+            <h1>Dtudo</h1>
+            <h3>Dtudo um site feito por uma pessoa comum assim como a maioria...<br> Estudando T.I a 25 anos, sobrevivendo$ com a mesma a 12...<br> Um exemplo prático de que é possível sobreviver$ de T.i....<br> O caminho posso tentar mostrar. Percorrer e seguir é com você.</h3>
         </div>
     </header>
     <main id="main_princ">
         <!--GRID ITEM e também um GRID CONTEINER-->
-        <!--    <img id="img_fundo_main" src="imgs/software_1200px.jpg">-->
         <div id="div_money" class="div_money">
             <a href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
                 <img id="SlaveMoney" src="imgs/SlaveMoney.png" alt="Escravo do Dinheiro" title="Informação Sobre como ganhar dinheiro"></a>
