@@ -24,14 +24,54 @@ body {
     background-color: var(--main-color);
     color: var(--font-color);
 }
+/* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
 #header{
     display: flex;
-    padding-top: 80px;
+    padding-top: 5rem;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+}
+/* Imagen do logo */
+#img_logo_grand{
+    padding-top: 2rem;
+}
+/* Titulo dentro do cabeçalho H1 Dtudo */
+#header_h1{
+    font-size: 3rem;
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    padding: 0rem 0rem 0rem 3rem;
+    text-align: center;
+}
+/* Todos os Textos com o class P=p_texto as descrições */
+.p_texto{
+    font-size: 1rem;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    padding: 0rem 0rem 0rem 3rem;
 }
 #main_princ{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0rem;
 }
+.h2_titulo{
+    text-align: center;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+/* DIVs - classe com os links para as paginas secundárias */
+.divs_link{
+    text-align: center;
+}
+/* Imagens Lnks para acessar as paginas do site */
+.imgs_link{
+
+}
+

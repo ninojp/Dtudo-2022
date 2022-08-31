@@ -30,23 +30,32 @@
             <img id="img_logo_grand" src="imgs/Logo_Dtudo_2022-300p.png" alt="Logo Dtudo" title="Imagem do Logo Dtudo">
         </div>
         <div id="div_dir">
-            <h1>Dtudo</h1>
-            <h3>Dtudo um site feito por uma pessoa comum assim como a maioria...<br> Estudando T.I a 25 anos, sobrevivendo$ com a mesma a 12...<br> Um exemplo prático de que é possível sobreviver$ de T.i....<br> O caminho posso tentar mostrar. Percorrer e seguir é com você.</h3>
+            <h1 id="header_h1">Dtudo T.I</h1>
+            <p class="p_texto">Dtudo é um site informativo sobre Tecnologia da Informação...<br>
+            Feito por um estudante de T.I a 25 anos, sobrevivendo$ com a mesma a 12...<br> 
+            Um exemplo prático de que é possível sobreviver$ de T.i...<br> 
+            O caminho posso tentar mostrar. Percorrer e seguir é com você.</p>
         </div>
     </header>
     <main id="main_princ">
         <!--GRID ITEM e também um GRID CONTEINER-->
-        <div id="div_money" class="div_money">
-            <a href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
-                <img id="SlaveMoney" src="imgs/SlaveMoney.png" alt="Escravo do Dinheiro" title="Informação Sobre como ganhar dinheiro"></a>
-        </div>
-        <div class="divs_main" id="div_img_ti">
+        <div class="divs_link" id="div_ti">
+            <h2 class="h2_titulo">Estudando e Praticando Tecnologia da Informação!</h2>
             <a href="https://localhost/dtudo/t_i.php" target="_new" title="Pagina sobre Tecnologia da Informação">
-                <img src="imgs/TI_link.png" id="img_ti" alt="T.I" title="Informação sobre Tecnologia da Informação"></a>
+                <img class="imgs_link" src="imgs/TI_link.png" id="img_ti" alt="T.I" title="Informação sobre Tecnologia da Informação"></a>
+            <p class="p_texto">Hardware ou Software, conheça o caminho certo, para quem está começando ou já está na área, mas ainda não está ganhando dinheiro na mesma. T.I é como tudo na vida exige tempo e dedicação, mas com o rumo certo, para não gastar tempo com algo que não lhe trará retorno$.</p> 
         </div>
-        <div class="div_" id="div_img_musicas">
+        <div class="divs_link" id="div_ganhar">
+            <h2 class="h2_titulo">Como ganhar dinheiro com T.I!</h2>
+            <a href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
+                <img class="imgs_link" src="imgs/SlaveMoney.png" alt="Escravo do Dinheiro" title="Informação Sobre como ganhar dinheiro"></a>
+            <p class="p_texto">Sem promessas milagrosas sem papo furado... Estudando e trabalhando com T.I na prática. Com investimentos de baixo risco para quem pode, com estudo para quem se dedica e com esforço para quem já sabe.</p>
+        </div>
+        <div class="divs_link" id="div_lazer">
+            <h2 class="h2_titulo">Lazer, pois a escolha é a chave, o equilíbrio é a certeza do sucesso ou caminho para o mesmo!</h2>
             <a href="https://localhost/dtudo/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral">
-                <img src="imgs/animes_personagem_400px.png" id="img_animes" alt="Animes" title="Todos os Animes que já assisti"></a>
+                <img class="imgs_link" src="imgs/animes_personagem_400px.png" id="img_animes" alt="Animes" title="Todos os Animes que já assisti"></a>
+            <p class="p_texto">Estar motivado vai fazer você prosseguir e não desistir no meio do caminho, o que acontece com a maioria nesta área de T.I, então tenha foco saiba escolher o que mais lê interessa nesta imensa área. Aí entra o lazer, junte algo que você gosta com algo que lê traga retorno$</p>
         </div>
     </main>
     <?php include('rodape.php'); ?>
