@@ -1,5 +1,4 @@
 /* CSS exclusivo para esta Página NAVBARRA.css */
-
 /* Tag NAV com o ID=nav_barra  */
 #nav_barra{
     position: fixed;
@@ -7,6 +6,7 @@
     z-index: 999;
     font-family: 'Cinzel Decorative', Ubuntu;
     background-color: rgb(6, 3, 14);
+    color: var(--font-color);
     /* border: #ffd700 dotted 1px; */
 }
 #nav_barra ul a{

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondColor);
+    color: var(--font-color);
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+/* Imagen do logo */
+#img_logo_grand{
+    padding-top: 2rem;
+}
+#div_dir{
+    padding: 10px;
+}
+/* Titulo dentro do cabeçalho H1 Dtudo */
+#header_h1{
+    font-size: 3rem;
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    padding: 0rem 0rem 0rem 3rem;
+    text-align: center;
+}
+/* Todos os Textos com o class P=p_texto as descrições */
+.p_texto{
+    font-size: 1rem;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* padding: 0rem 0rem 0rem 3rem; */
+}
+@media (max-width: 1024px) {
+    /* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
+    #header{
+        display: block;
+        padding-top: 5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 590px) {
+    /* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
+    #header{
+        display: block;
+        padding-top: 5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

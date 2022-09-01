@@ -9,6 +9,8 @@
     font-size: 14px;
     font-family: 'Cutive Mono', monospace;
     background-color: rgb(6, 3, 14);
+    color: var(--font-color);
+    padding: 1rem 2rem;
     /* border: 1px dotted rgb(255, 255, 255); */
 }
 #div_esquerda {

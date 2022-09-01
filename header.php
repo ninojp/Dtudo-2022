@@ -1,12 +1,14 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="css/headerStyle.css">
-</head>
-<header id="header_cabec"><!-- GRID ITEM cabecalho -->
-        <div id="div_text_esq">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<!-- HEADER ID=header - Cabeçalho da página-->
+<header id="header">
+        <div id="div_esq">
+            <img id="img_logo_grand" src="imgs/Logo_Dtudo_2022-300p.png" alt="Logo Dtudo" title="Imagem do Logo Dtudo">
         </div>
-        <div id="div_img_logo">
-            <img id="img_logo_grand" src="imgs/DTUDO-Logo_2021_303x100.jpg">
+        <div id="div_dir">
+            <h1 id="header_h1">Dtudo T.I</h1>
+            <p class="p_texto">Dtudo é um site informativo sobre Tecnologia da Informação...<br>
+            Feito por um estudante de T.I a 25 anos, sobrevivendo$ com a mesma a 12...<br> 
+            Um exemplo prático de que é possível sobreviver$ de T.i...<br> 
+            O caminho posso tentar mostrar. Percorrer e seguir é com você.</p>
         </div>
-        <div id="div_text_dir">
-        </div>
-</header>
+    </header>
