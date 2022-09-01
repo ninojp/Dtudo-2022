@@ -1,17 +1,26 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/geralStyle.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- AWESOME-FONTs com a CDNjs -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Link do Google Fonts (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> TESTE, acho q não é necessária -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/StyleGeral.css">
     <link rel="Stylesheet" type="text/css" href="css/bitStyle.css">
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
     <title>Dtudo - Bitcoin</title>
 </head>
 <body>
-<?php session_start(); include('conexao.php'); 
-                       include('navbarra.php'); ?>
+<?php include('conecta.php'); 
+    include('navbarra.php'); ?>
 <nav id="nav_menu_fixo">
     <ul>
         <li><a href="#sect_bitcoin">Bitcoin o ouro digital</a></li>
@@ -27,7 +36,7 @@
                 <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Tape de Cotações</span></a> por TradingView</div>
                 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
                 {
-                "symbols": [ {
+                "symbols"; [ {
                 "proName": "BITSTAMP:BTCUSD",
                 "title": "BTC/USD"
                 }, {
@@ -37,11 +46,11 @@
                 "description": "BTC/BRL  Binance",
                 "proName": " BINANCE:BTCBRL"
                 } ],
-                "showSymbolLogo": true,
-                "colorTheme": "dark",
-                "isTransparent": true,
-                "displayMode": "adaptive",
-                "locale": "br" }
+                "showSymbolLogo"; true,
+                "colorTheme"; "dark",
+                "isTransparent"; true,
+                "displayMode"; "adaptive",
+                "locale"; "br" }
             </script>
         </div>  <!-- TradingView Widget END -->
         </header>
@@ -113,14 +122,14 @@
                 <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Mercados de Criptomoedas</span></a> por TradingView</div>
                 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
                 {
-                    "width": "100%",
-                    "height": "100%",
-                    "defaultColumn": "overview",
-                    "screener_type": "crypto_mkt",
-                    "displayCurrency": "USD",
-                    "colorTheme": "dark",
-                    "locale": "br",
-                    "isTransparent": true
+                    "width"; "100%",
+                    "height"; "100%",
+                    "defaultColumn"; "overview",
+                    "screener_type"; "crypto_mkt",
+                    "displayCurrency"; "USD",
+                    "colorTheme"; "dark",
+                    "locale"; "br",
+                    "isTransparent"; true
                 }
                 </script>
             </div><!-- TradingView Widget END -->
