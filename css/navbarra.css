@@ -6,6 +6,7 @@
     width: 100%;
     z-index: 999;
     font-family: 'Cinzel Decorative', Ubuntu;
+    background-color: rgb(6, 3, 14);
     /* border: #ffd700 dotted 1px; */
 }
 #nav_barra ul a{
@@ -25,7 +26,7 @@
     max-width: 1366px;
     padding: 0px 10px;
     margin: auto;
-    border: #fff dotted 1px;
+    /* border: #fff dotted 1px; */
 }
 /* DIV ID=div_logo_uls do IMG=Logo e UL=Lista do Login */
 #div_logo_uls{

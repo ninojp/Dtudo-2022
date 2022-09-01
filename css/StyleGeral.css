@@ -16,6 +16,7 @@ font-family: 'Ubuntu', sans-serif; */
     --linkActive: #ffd700;
     --linkVisited: rgb(4, 9, 170);
     --firstColor: #fff;
+    --secondColor: rgb(6, 3, 14);
     --transp: transparent;/*Testar depois*/
 
 }
@@ -27,6 +28,7 @@ body {
 /* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
 #header{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 5rem;
     align-items: center;
     justify-content: center;
@@ -34,6 +36,9 @@ body {
 /* Imagen do logo */
 #img_logo_grand{
     padding-top: 2rem;
+}
+#div_dir{
+    padding: 10px;
 }
 /* Titulo dentro do cabeçalho H1 Dtudo */
 #header_h1{
@@ -51,13 +56,23 @@ body {
     font-family: 'Cutive Mono', monospace;
     /* font-family: 'Kalam', cursive; */
     /* font-family: 'Ubuntu', sans-serif; */
-    padding: 0rem 0rem 0rem 3rem;
+    /* padding: 0rem 0rem 0rem 3rem; */
 }
+/* MAIN div conteiner com o conteudo central da pagina */
 #main_princ{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 3rem 0rem;
+}
+/* DIVs com o conteudo H2, A, IMG, P */
+.divs_link{
+    width: calc(33% - 20px);
+    background-color: rgb(6, 3, 14);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
 }
 .h2_titulo{
     text-align: center;
@@ -66,12 +81,86 @@ body {
     /* font-family: 'Kalam', cursive; */
     /* font-family: 'Ubuntu', sans-serif; */
 }
-/* DIVs - classe com os links para as paginas secundárias */
-.divs_link{
-    text-align: center;
+#img_ti{
+    width: 40%;
 }
-/* Imagens Lnks para acessar as paginas do site */
-.imgs_link{
+#img_money{
+    width: 50%;
+}
+#img_anime{
+    width: 90%;
+}
+/* media query para responsividade, tela menor que 1024px */
+@media (max-width: 1024px) {
+    /* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
+    #header{
+        display: block;
+        padding-top: 5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    /* MAIN div conteiner com o conteudo central da pagina */
+    #main_princ{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0rem;
+    }
+    /* DIVs com o conteudo H2, A, IMG, P */
+    .divs_link{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding-top: 2rem;
+        width: calc(50% - 10px);
+    }
+    #img_ti{
+        width: 50%;
+        text-align: center;
+    }
+    #img_money{
+        width: 70%;
+    }
+    #img_anime{
+        width: 80%;
+    }
+}
 
+/* media query para responsividade, tela menor que 590px */
+@media (max-width: 590px) {
+    /* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
+    #header{
+        display: block;
+        padding-top: 5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    /* MAIN div conteiner com o conteudo central da pagina */
+    #main_princ{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0rem;
+    }
+    /* DIVs com o conteudo H2, A, IMG, P */
+    .divs_link{
+        text-align: center;
+        padding-top: 2rem;
+        width: 100%;
+    }
+    #img_ti{
+        width: 60%;
+    }
+    #img_money{
+        width: 70%;
+    }
+    #img_anime{
+        width: 90%;
+    }
 }
 
