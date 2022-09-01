@@ -5,7 +5,7 @@ include_once('consulta_count.php');
 <div class="col-xxl-2 col-xl-2 col-lg-2 text-center">
 	<div class="row">
 	<div class="col-xx-12" style="margin-top: 3rem;">
-			<h5><a href="index.php" alt="Página da Lista dos Animes">Animes</a> (<?php echo $exibe_count_anime['qnt_anime'];?>)</h5>
+			<h5><a href="animacao.php" alt="Página da Lista dos Animes">Animes</a> (<?php echo $exibe_count_anime['qnt_anime'];?>)</h5>
 		</div>
 		<div class="col-xx-12" style="margin-top: 1rem;">
 			<h5><a href="series.php" alt="Página da Lista das Séries">Séries</a> (<?php echo $exibe_count_serie['qnt_serie'];?>)</h5>

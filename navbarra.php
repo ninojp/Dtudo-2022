@@ -25,7 +25,7 @@
             <a class="link_btn" href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin"><li>$Ganhar$</li></a>
             <a class="link_btn" href="https://localhost/dtudo/t_i.php" target="_new" title="Informção sobre T.I"><li>T.I</li></a>
             <a class="link_btn" href="https://localhost/dtudo/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral"><li>Animes</li></a>
-            <a class="link_btn" href="https://localhost/dtudo/animacao/sobre.php" target="_new" title="Pagina sobre O Site e o Autor"><li>Sobre</li></a>
+            <a class="link_btn" href="https://localhost/dtudo/sobre.php" target="_new" title="Pagina sobre O Site e o Autor"><li>Sobre</li></a>
         </ul>
         <div class="div_btn" id="div_btn">
             <i id="icon_menu" class="fa-solid fa-bars icon_menu"></i>

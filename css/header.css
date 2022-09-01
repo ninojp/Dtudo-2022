@@ -25,6 +25,7 @@
     /* font-family: 'Ubuntu', sans-serif; */
     padding: 0rem 0rem 0rem 3rem;
     text-align: center;
+    color: var(--linkActive);
 }
 /* Todos os Textos com o class P=p_texto as descrições */
 .p_texto{

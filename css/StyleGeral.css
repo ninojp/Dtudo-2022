@@ -10,7 +10,7 @@ font-family: 'Ubuntu', sans-serif; */
     box-sizing: border-box;
 }
 /* Variável GLOBAL do css */
-/* :root{
+:root{
     --main-color: #000;
     --font-color: #0d6efd;
     --linkActive: #ffd700;
@@ -18,8 +18,7 @@ font-family: 'Ubuntu', sans-serif; */
     --firstColor: #fff;
     --secondColor: rgb(6, 3, 14);
     --transp: transparent;
-
-} */
+}
 body {
     display: block;
     background-color: var(--main-color);
@@ -48,6 +47,7 @@ body {
     font-family: 'Cutive Mono', monospace;
     /* font-family: 'Kalam', cursive; */
     /* font-family: 'Ubuntu', sans-serif; */
+    color: var(--linkActive);
 }
 #img_ti{
     width: 40%;
