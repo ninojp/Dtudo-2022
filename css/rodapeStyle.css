@@ -9,12 +9,17 @@
     font-size: 14px;
     font-family: 'Cutive Mono', monospace;
     background-color: rgb(6, 3, 14);
-    color: var(--font-color);
+    color: var(--azulClaro);
     padding: 1rem 2rem;
+    margin: 0px;
     /* border: 1px dotted rgb(255, 255, 255); */
+}
+p{
+    margin: 0px;
 }
 #div_esquerda {
     display: flex;
+    align-items: center;
 }
 #div_centro {
     display: flex;
@@ -26,13 +31,14 @@
 #div_direita {
     display: flex;
     padding-right: 2rem;
+    align-items: center;
 }
 #div_direita a{
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--azulClaro);
 }
 #destaq{
-    color: var(--linkActive);
+    color: var(--gold);
 }
 @media (max-width:850px) {
     #footer_rodape {

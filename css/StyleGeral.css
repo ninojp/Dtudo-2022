@@ -38,7 +38,6 @@ body {
 .divs_link{
     width: calc(33% - 20px);
     background-color: var(--azulScuro);
-    color: var(--azulClaro);
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -46,10 +45,14 @@ body {
 .h2_titulo{
     text-align: center;
     /* font-family: 'Cinzel Decorative', cursive; */
-    font-family: 'Cutive Mono', monospace;
-    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Cutive Mono', monospace; */
+    font-family: 'Kalam', cursive;
     /* font-family: 'Ubuntu', sans-serif; */
     color: var(--branco);
+}
+.p_texto{
+    color: var(--azulClaro);
+    font-family: 'Cutive Mono', monospace !important;
 }
 #img_ti{
     width: 40%;

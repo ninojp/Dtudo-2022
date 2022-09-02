@@ -4,12 +4,20 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    font-family: 'Cinzel Decorative', Ubuntu;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* font-family: 'Cinzel Decorative', Ubuntu; */
+    font-family: 'Kalam', cursive;
     background-color: var(--azulScuro);
     color: var(--azulClaro);
     /* border: #ffd700 dotted 1px; */
 }
+#nav_barra ul, ol, li, a{
+    margin: 0px;
+}
 #nav_barra ul a{
+    align-items: center;
     text-decoration: none;
     list-style: none;
     color: var(--azulClaro);
@@ -22,10 +30,10 @@
 #div_container{
     display: flex;
     align-items: center;
+    margin: auto;
     justify-content: space-between;
     max-width: 1366px;
     padding: 0px 10px;
-    margin: auto;
     /* border: #fff dotted 1px; */
 }
 /* DIV ID=div_logo_uls do IMG=Logo e UL=Lista do Login */

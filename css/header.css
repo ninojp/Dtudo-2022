@@ -20,8 +20,8 @@
 /* Titulo dentro do cabeçalho H1 Dtudo */
 #header_h1{
     font-size: 3rem;
-    font-family: 'Cutive Mono', monospace;
-    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Cutive Mono', monospace; */
+    font-family: 'Kalam', cursive;
     /* font-family: 'Ubuntu', sans-serif; */
     padding: 0rem 0rem 0rem 3rem;
     text-align: center;
