@@ -4,8 +4,8 @@
 #header{
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--secondColor);
-    color: var(--font-color);
+    background-color: var(--azulScuro);
+    color: var(--azulClaro);
     padding-top: 4rem;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
     /* font-family: 'Ubuntu', sans-serif; */
     padding: 0rem 0rem 0rem 3rem;
     text-align: center;
-    color: var(--linkActive);
+    color: var(--branco);
 }
 /* Todos os Textos com o class P=p_texto as descrições */
 .p_texto{

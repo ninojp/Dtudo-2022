@@ -5,18 +5,18 @@
     width: 100%;
     z-index: 999;
     font-family: 'Cinzel Decorative', Ubuntu;
-    background-color: rgb(6, 3, 14);
-    color: var(--font-color);
+    background-color: var(--azulScuro);
+    color: var(--azulClaro);
     /* border: #ffd700 dotted 1px; */
 }
 #nav_barra ul a{
     text-decoration: none;
     list-style: none;
-    color: var(--font-color);
+    color: var(--azulClaro);
 }
 /* ID= nav_barra ul a -> dos LINKs das UL, login e menu */
 #nav_barra ul a :active{
-    color: var(--linkActive);
+    color: var(--gold);
 }
 /* DIV com ID=CONTAINER */
 #div_container{
@@ -69,7 +69,7 @@
         content: "\f00d";
     }
     #ul_login{
-        background-color: var(--main-color);
+        background-color: var(--preto);
         position: fixed;
         height: 6vh;
         width: 35vw;
@@ -78,7 +78,7 @@
         /* border: #fff dotted 1px; */
     }
     #ul_login.active{
-        background-color: var(--main-color);
+        background-color: var(--preto);
         position: fixed;
         height: 6vh;
         width: 30vw;
@@ -88,7 +88,7 @@
         /* border: #fff dotted 1px; */
     }
     #ul_menu{
-        background-color: var(--main-color);
+        background-color: var(--preto);
         position: fixed;
         height: 6vh;
         width: 45vw;
@@ -97,7 +97,7 @@
         /* border: #fff dotted 1px; */
     }
     #ul_menu.active{
-        background-color: var(--main-color);
+        background-color: var(--preto);
         position: fixed;
         height: 6vh;
         width: 45vw;
