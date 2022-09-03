@@ -1,5 +1,30 @@
-@charset "utf-8";
+@charset "UTF-8";
 /* CSS exclusivo para esta Página NAVBARRA.css */
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variáveis GLOBAIs das CORES da Pagina */
+:root{
+    --branco: #fff;
+    --transp: transparent;
+    --dark: #373636;
+    --preto: #000;
+    --preto20: rgba(0,0,0,0.2);
+    --preto40: rgba(0,0,0,0.4);
+    --preto60: rgba(0,0,0,0.6);
+    --preto80: rgba(0,0,0,0.8);
+    --azulClaro: rgba(13, 110, 253,1);
+    --azulMedio: rgba(4, 8, 115,1);
+    --azulScuro: rgba(8, 4, 19,1);
+    --gold: #ffd700;
+}
 
 /* Tag NAV com o ID=nav_barra tag principal q engloba todo o conteudo */
 #nav_barra{
@@ -39,26 +64,25 @@
     /* border: #fff dotted 1px; */
 }
 
-
-
 /* DIV ID=div_logo_uls da IMAGEM IMG=Logo e da DIV=dropdown e LISTA do Login */
 #div_logo_uls{
     display: flex;
-    align-items: baseline;
     position: relative;
 }
-/* ID da imagem do logo pequeno */
-#img_logo_peq{
+/* DIV ID=div_img_login da imagem do logo pequeno */
+#div_img_login{
     margin-right: 1em;
 }
-/* DIV com icon USERS e texto LOGIN */
-#div_login{
 
-}
+/* DIV id=div_dropd e class="dropdown" do MENU DROPDOWN do login */
 #div_dropd{
     position: absolute;
     left: 90px;
     bottom: -2px;
+    background-color: var(--preto80);
+}
+#div_dropd ul, li{
+    background-color: var(--preto80);
 }
 /* UL dentro da div_container */
 #ul_menu{
@@ -68,13 +92,68 @@
 #ul_menu li{
     margin-right: 2em;
 }
-/* Botão q vai aparecer somente quando a tela for menor que: 590px */
+/* Botão UMBURGUER q vai aparecer somente quando a tela for menor que: 590px */
 #div_btn{
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
+/* implementações para as janelas MODAL */
+/* .modal .modal-dialog{
+    box-shadow: 1px 4px 5px 1px #0d6efd;
+} */
+.modal .modal-dialog .modal-content{
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 4px 10px 1px rgba(255, 255, 255, 0.808);
+    background-color: var(--azulClaro);
+    color: var(--branco);
+}
+/* DIV class=topo_modal Parte superior do modal com o titulo e o botão fechar */
+.topo_modal{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--azulMedio);
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    border-radius: 7px 7px 0px 0px;
+}
+/* DIV class=div_tit_modal com o titulo da janela modal */
+.div_tit_modal{
+    display: flex;
+    width: 90%;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    padding-left: 4em;
+}
+.div_bt_fechar{
+    display: flex;
+    width: 10%;
+}
+.bt_fechar{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--azulMedio);
+    padding: 0px 15px;
+    color: var(--branco);
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 0px 7px 0px 0px;
+}
 /* MEDIA QUERY para responsividade em telas menores que: 590px */
 @media (max-width: 590px) {
     #div_btn{
@@ -128,97 +207,10 @@
     }
 }/* FIM MEDIA QUERY - telas menores que: 590px */
 
-/* implementações para as janelas MODAL */
-/* .modal .modal-dialog{
-    box-shadow: 1px 4px 5px 1px #0d6efd;
-} */
-.modal .modal-dialog .modal-content{
-    box-shadow: 0px 0px 5px 2px rgba(67, 54, 190, 0.808);
-    background-color: var(--azulClaro);
-}
-/* Parte superior do madal com o titulo e o botão fechar */
-.topo_modal{
-    display: flex;
-    background-color: var(--azulScuro);
-}
-
 /* ESTILOS ANTIGOS da outra folha geral_style.css */
 
-/*Classe de FUNDO das DIVs anime_detales e outras */
-.fundo_dark {
-	background-color: #373636;
-	color: #0d6efd;
-}
-.fundo_transp {
-	background-color: transparent;
-}
-.fundo_black_80 {
-	background-color: rgba(0,0,0,0.8);
-}
-.fundo_black_60 {
-	background-color: rgba(0,0,0,0.6);
-}
-.fundo_black_40 {
-	background-color: rgba(0,0,0,0.4);
-}
-.fundo_black_20 {
-	background-color: rgba(0,0,0,0.2);
-}
-
-/*AS DEFINIÇÕES DOS FILDSETs ANTIGOS*/
-fieldset {
-	border-color: rgba(86,113,252,1.00);
-	min-width: auto;
-    margin: 20px;
-    padding: 20px;
-    background-color: rgba(0,0,0,1.00);
-    border-radius: 10px;
-	border: 2px solid rgba(86,113,252,1.00);
-}
-legend {
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: rgba(77,112,255,1.00);
-    text-shadow: 0px 0px 2px #000000;
-    border-radius: 10px;
-    padding: 0px 8px;
-    border: 2px solid rgba(86,113,252,1.00);
-	text-align: center;
-}
-.legend2 {
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(77,112,255,1.00);
-    text-shadow: 0px 0px 2px #000000;
-    border-radius: 10px;
-    padding: 0px 8px;
-    border: 2px solid rgba(86,113,252,1.00);
-	text-align: center;
-}
-fieldset label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(96, 96, 255);
-}
-fieldset input {
-    min-width: 200px;
-    /* background-color: #727272; */
-}
-fieldset textarea {
-    min-width: 300px;
-    /* background-color: #727272; */
-}
-fieldset input:hover {
-    background-color: white;
-}
-
 /*AS DEFINIÇÕES DAS CLASSES DOS BOTÔES ANTIGOS*/
-.bt_fechar {
+/* .bt_fechar {
     font-size: 1.5rem;
     font-weight: 700;
     color: #000000;
@@ -226,7 +218,7 @@ fieldset input:hover {
     border-radius: 3px;
     box-shadow: 0px 0px 5px 2px rgba(255,255,255,1.00);
     padding: 0em 0.3em;
-}
+} */
 /*classe somente para botoes em geral*/
 .meu_btn {
     background-color: rgba(255,255,255,0.9); 
@@ -263,4 +255,7 @@ fieldset input:hover {
     border-radius: 3px;
     box-shadow: 0px 0px 5px 2px rgba(185,0,3,0.94);
     text-shadow: 0px 0px 1px #ffffff;
+}
+#destaq{
+    color: var(--gold);
 }
