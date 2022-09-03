@@ -1,4 +1,6 @@
+@charset "utf-8";
 /* Crie 27/08/22, um novo CSS para meu site para implementar novas tecnicas aprendidas no cruso PHP Developer - CELKE */
+
 /* Google Fontes escolhidas
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Cutive Mono', monospace;
@@ -55,14 +57,14 @@ body {
     font-family: 'Cutive Mono', monospace !important;
 }
 #img_ti{
-    width: 40%;
+    width: 30%;
     object-fit: cover;
 }
 #img_money{
-    width: 50%;
+    width: 40%;
 }
 #img_anime{
-    width: 90%;
+    width: 70%;
 }
 /* media query para responsividade, tela menor que 1024px */
 @media (max-width: 1024px) {
@@ -122,4 +124,6 @@ body {
         width: 90%;
     }
 }
+
+
 

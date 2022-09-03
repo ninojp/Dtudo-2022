@@ -2,23 +2,16 @@
 
 /* Cabeçalho da Página, com uma IMG logo, H1 titulo, P com texto  */
 #header{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     background-color: var(--azulScuro);
     color: var(--azulClaro);
     padding-top: 4rem;
     align-items: center;
     justify-content: center;
 }
-/* Imagen do logo */
-#img_logo_grand{
-    padding-top: 2rem;
-}
-#div_dir{
-    padding: 10px;
-}
 /* Titulo dentro do cabeçalho H1 Dtudo */
 #header_h1{
+    display: block;
     font-size: 3rem;
     /* font-family: 'Cutive Mono', monospace; */
     font-family: 'Kalam', cursive;
@@ -27,6 +20,30 @@
     text-align: center;
     color: var(--branco);
 }
+/* ROW é uma linha abaixo do titulo do HEADER com a imgagem do log e o texto */
+#header #row_header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* DIV do lado esquerdo com a imagem do logo */
+#div_esq{
+    align-items: center;
+    text-align: end;
+    
+}
+/* Imagen do logo */
+#img_logo_grand{
+    align-self: flex-end;
+}
+
+/* DIV do P do texto do lado direito */
+#div_dir{
+    padding: 10px 0px 0px 30px;
+    align-items: flex-start;
+}
+
 /* Todos os Textos com o class P=p_texto as descrições */
 .p_texto{
     font-size: 1rem;
