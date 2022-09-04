@@ -1,30 +1,36 @@
+@charset "UTF-8";
 /* Resolvi criar 01/09/22 um CSS especifico para a pagina T_I.php */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Variável GLOBAL do css */
+/* Variáveis GLOBAIs das CORES da Pagina */
 :root{
-    --main-color: #000;
-    --font-color: #0d6efd;
-    --linkActive: #ffd700;
-    --linkVisited: rgb(4, 9, 170);
-    --firstColor: #fff;
-    --secondColor: rgb(6, 3, 14);
-    --transp: transparent;/*Testar depois*/
+    --branco: #fff;
+    --transp: transparent;
+    --dark: #373636;
+    --preto: #000;
+    --preto20: rgba(0,0,0,0.2);
+    --preto40: rgba(0,0,0,0.4);
+    --preto60: rgba(0,0,0,0.6);
+    --preto80: rgba(0,0,0,0.8);
+    --azulClaro: rgba(13, 110, 253,1);
+    --azulMedio: rgba(4, 8, 115,1);
+    --azulScuro: rgba(8, 4, 19,1);
+    --gold: #ffd700;
 }
 body {
     display: block;
     /* color: var(--font-color); */
-    background-color: var(--main-color);
+    background-color: var(--preto) !important;
 }
 #main_ti{
     display: block;
     /* width: 100vw;
     height: 100vh; */
-    background-color: var(--main-color);
-    color: var(--font-color);
+    background-color: var(--preto);
+    color: var(--azulClaro);
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -39,7 +45,7 @@ body {
     padding: 1rem 3rem;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--linkActive);
+    color: var(--gold);
     text-align: left;
 }
 #row_main{
@@ -49,16 +55,16 @@ body {
 #sect_left{
     display: inline-block;
     width: calc(50% - 20px);
-    background-color: var(--main-color);
-    color: var(--firstColor);
+    background-color: var(--preto);
+    color: var(--branco);
     padding: 3rem 2rem;
-    border: #fff solid 2px;
+    /* border: #fff solid 2px; */
 }
 #sect_right{
     display: inline-block;
     width: calc(50% - 20px);
-    background-color: var(--firstColor);
-    color: var(--main-color);
+    background-color: var(--branco);
+    color: var(--preto);
     padding: 3rem 2rem;
     border: rgb(0, 0, 0) solid 2px;
 }

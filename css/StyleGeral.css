@@ -25,6 +25,9 @@ font-family: 'Ubuntu', sans-serif; */
     --azulMedio: rgb(4, 9, 170);
     --azulScuro: rgb(6, 3, 14);
     --gold: #ffd700;
+    /* NiceHash cores do site - só para tesar */
+    --NiceHash: rgba(1,13,21,1);
+    --NiceHash2: rgba(5,35,57,1);
 }
 body {
     display: block;
