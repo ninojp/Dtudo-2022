@@ -20,10 +20,17 @@ font-family: 'Ubuntu', sans-serif; */
     --preto40: rgba(0,0,0,0.4);
     --preto60: rgba(0,0,0,0.6);
     --preto80: rgba(0,0,0,0.8);
-    --azulClaro: rgba(13, 110, 253,1);
-    --azulMedio: rgba(4, 8, 115,1);
-    --azulScuro: rgba(8, 4, 19,1);
+    --azulClaro: #0d6efd;
+    --azulMedio: rgb(4, 9, 170);
+    --azulEscuro: rgba(5,35,57,1);
+    --azulScuro: rgba(1,13,21,1);
     --gold: #ffd700;
+    /* Cores em teste */
+    --azulScuroAnt: rgb(6, 3, 14);
+    --verdeScuro: #061000;
+    /* NiceHash cores do site - só para tesar */
+    --NiceHash: rgba(1,13,21,1);
+    --NiceHash2: rgba(5,35,57,1);
 }
 
 /* Tag NAV com o ID=nav_barra tag principal q engloba todo o conteudo */
@@ -79,7 +86,7 @@ font-family: 'Ubuntu', sans-serif; */
     position: absolute;
     left: 90px;
     bottom: -2px;
-    background-color: var(--preto80);
+    background-color: var(--azulScuro);
 }
 #div_dropd ul, li{
     background-color: var(--preto80);
@@ -88,9 +95,11 @@ font-family: 'Ubuntu', sans-serif; */
 #ul_menu{
     display: flex;
     align-items: center;
+    background-color: var(--azulScuro);
 }
 #ul_menu li{
     margin-right: 2em;
+    background-color: var(--azulScuro);
 }
 /* Botão UMBURGUER q vai aparecer somente quando a tela for menor que: 590px */
 #div_btn{
@@ -109,7 +118,7 @@ font-family: 'Ubuntu', sans-serif; */
     margin: 0px;
     padding: 0px;
     box-shadow: 0px 4px 10px 1px rgba(255, 255, 255, 0.808);
-    background-color: var(--azulClaro);
+    background-color: var(--azulEscuro);
     color: var(--branco);
 }
 /* DIV class=topo_modal Parte superior do modal com o titulo e o botão fechar */
@@ -117,10 +126,10 @@ font-family: 'Ubuntu', sans-serif; */
     display: flex;
     position: relative;
     width: 100%;
-    height: 90px;
+    height: 100px;
     margin: 0px;
-    padding: 0px;
-    background-color: var(--azulMedio);
+    padding: 10px;
+    background-color: var(--azulScuro);
     align-items: center;
     justify-content: center;
     color: var(--branco);
@@ -145,7 +154,7 @@ font-family: 'Ubuntu', sans-serif; */
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color: var(--azulMedio);
+    background-color: var(--azulScuro);
     padding: 0px 15px;
     color: var(--branco);
     font-size: 2em;
@@ -154,6 +163,101 @@ font-family: 'Ubuntu', sans-serif; */
     border: none;
     border-radius: 0px 7px 0px 0px;
 }
+/* Div class=div_modal_body, do body MODAL, container */
+.div_body_modal{
+    align-items: center;
+    justify-content: center;
+    color: var(--azulScuro);
+}
+/* DIV ROW class=body_row_modal dentro do body do MODAL */
+.body_row_modal{
+    align-items: center;
+    justify-content: center;
+}
+/* FORMULARIO class=form_modal */
+.form_modal{
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+/* DIV dos INPUTs do FORM */
+.div_input_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 3em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+/* SPAN icon dentro dos inputs */
+.icon_input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 2em;
+    background-color: var(--azulScuro);
+    font-size: 1.5em;
+    color: var(--branco);
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--azulScuro);
+}
+
+/* INPUTs dentro do form modal */
+.input_form_modal{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 4em;
+    border-radius: 5px;
+    border: 2px solid var(--azulScuro);
+    transition: all 0.3s ease;
+}
+/* INPUTs dentro do form modal quando PASSAR o mouse*/
+.input_form_modal:hover{
+    border: 2px solid var(--azulClaro);
+}
+/* PLACEHOLDER dentro dos inputs */
+.div_input_form input::placeholder{
+    padding-left: 4em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--preto);
+}
+/* Botão input class=btn_submit_modal para enviar os dados do formulário */
+.btn_submit_modal{
+    display: block;
+    height: 100%;
+    background-color: var(--azulScuro);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--branco);
+    padding: 0 3em;
+    border-radius: 5px;
+    border: 1px solid var(--azulScuro);
+}
+.btn_submit_modal:hover{
+    display: block;
+    background-color: var(--azulEscuro);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--branco);
+    border-radius: 5px;
+    border: 1px solid var(--branco);
+}
+/* DIV row class=row_recup_senha no final do modal com os LINKs Cadastrar usuario e Recuperar senha */
+.row_recup_senha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+}
+
 /* MEDIA QUERY para responsividade em telas menores que: 590px */
 @media (max-width: 590px) {
     #div_btn{
@@ -165,7 +269,7 @@ font-family: 'Ubuntu', sans-serif; */
         content: "\f00d";
     }
     #ul_login{
-        background-color: var(--preto);
+        background-color: var(--azulScuro);
         position: fixed;
         height: 6vh;
         width: 35vw;
@@ -174,7 +278,7 @@ font-family: 'Ubuntu', sans-serif; */
         /* border: #fff dotted 1px; */
     }
     #ul_login.active{
-        background-color: var(--preto);
+        background-color: var(--azulScuro);
         position: fixed;
         height: 6vh;
         width: 30vw;
@@ -184,7 +288,7 @@ font-family: 'Ubuntu', sans-serif; */
         /* border: #fff dotted 1px; */
     }
     #ul_menu{
-        background-color: var(--preto);
+        background-color: var(--azulScuro);
         position: fixed;
         height: 6vh;
         width: 45vw;
@@ -193,7 +297,7 @@ font-family: 'Ubuntu', sans-serif; */
         /* border: #fff dotted 1px; */
     }
     #ul_menu.active{
-        background-color: var(--preto);
+        background-color: var(--azulScuro);
         position: fixed;
         height: 6vh;
         width: 45vw;

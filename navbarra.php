@@ -68,32 +68,32 @@
                 <button class="bt_fechar" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
 				<!-- </div> -->
 			</div>
-			<div class="modal-body mt-3">
-				<div class="container mt-4">
-					<div class="row justify-content-center">
-						<div class="col-lg-12 col-xl-12 col-xxl-12"><br>
-							<form class="" method="post" action="validaUsuario.php" name="logon">
-                                <div class="input-group input-group-sm mb-3">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm"> Email: </span>
-                                    <input name="email" type="email" class="form-control" aria-label="Sizing example input" placeholder="Digite seu @e-mail" aria-describedby="inputGroup-sizing-sm" required id="email">
-                                </div>
-                                <div class="input-group input-group-sm mb-3">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm"> Senha: </span>
-                                    <input name="senha" type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required id="senha">
-                                </div>			
-								<button type="submit" class="meu_btn">Entrar</button>
-							</form>
-							<legend class="legend2">Ainda não sou cadastrado!</legend>
-								<div class="form-group">
-									<button type="submit" class="meu_btn" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal">Cadastrar Novo Usuário</button>
-								</div><br>
-								<legend class="legend2">Recuperar Senha!</legend>
-								<div class="form-group">
-									<button type="submit" class="meu_btn" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal">Esqueci minha senha!</button>
-								</div>
-						</div>
-					</div>
-				</div>
+			<div class="div_body_modal modal-body container">
+                <div class="body_row_modal row justify-content-center">
+                    <div class="col-lg-12 col-xl-12 col-xxl-12">
+                        <form class="form_modal" method="post" action="validaUsuario.php" name="logon">
+                            <div class="div_input_form">
+                                <i class="icon_input fa-solid fa-envelope-circle-check"></i>
+                                <input class="input_form_modal" name="email" type="email" aria-label="Sizing example input" placeholder="Digite seu @e-mail" aria-describedby="inputGroup-sizing-sm" required id="email">
+                            </div>
+                            <div class="div_input_form">
+                                <i class="icon_input fa-solid fa-key"></i>
+                                <input class="input_form_modal" name="senha" type="password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required id="senha" placeholder="Digite sua Senha!">
+                            </div>
+                            <div class="div_input_form">			
+                                <input class="btn_submit_modal" type="submit" value="Fazer o Login">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row_recup_senha row">
+                        <div class="recup_senha">
+                            <a href="" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal">Recuperar sua senha?</a>
+                        </div>
+                        <div class="cadast_usuario">
+                            <a href="#" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal" title="Link para Cadastrar umnovo Usuário">Cadastrado novo usuário?</a>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>

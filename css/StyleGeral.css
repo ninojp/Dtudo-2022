@@ -11,24 +11,7 @@ font-family: 'Ubuntu', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
-/* Variáveis GLOBAIs das CORES da Pagina */
-:root{
-    --branco: #fff;
-    --transp: transparent;
-    --dark: #373636;
-    --preto: #000;
-    --preto20: rgba(0,0,0,0.2);
-    --preto40: rgba(0,0,0,0.4);
-    --preto60: rgba(0,0,0,0.6);
-    --preto80: rgba(0,0,0,0.8);
-    --azulClaro: #0d6efd;
-    --azulMedio: rgb(4, 9, 170);
-    --azulScuro: rgb(6, 3, 14);
-    --gold: #ffd700;
-    /* NiceHash cores do site - só para tesar */
-    --NiceHash: rgba(1,13,21,1);
-    --NiceHash2: rgba(5,35,57,1);
-}
+
 body {
     display: block;
     background-color: #000 !important;
