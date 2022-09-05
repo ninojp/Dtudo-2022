@@ -5,7 +5,8 @@
 <!-- GOOGLE FONTs (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/NavBarra.css">
+<!-- Meu CSS local NAVBARRA.CSS -->
+<link rel="stylesheet" type="text/css" href="css/navbarra.css">
 <nav id="nav_barra">
     <div id="div_container">
         <div id="div_logo_uls">

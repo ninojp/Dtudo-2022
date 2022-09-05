@@ -5,15 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- AWESOME-FONTs com a CDNjs -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <!-- Link do Google Fonts (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> TESTE, acho q não é necessária -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/StyleGeral.css">
     <link rel="Stylesheet" type="text/css" href="css/bitStyle.css">
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
     <title>Dtudo - Bitcoin</title>
@@ -21,13 +12,15 @@
 <body>
 <?php include('conecta.php'); 
     include('navbarra.php'); ?>
-<nav id="nav_menu_fixo">
-    <ul>
-        <li><a href="#sect_bitcoin">Bitcoin o ouro digital</a></li>
-        <li><a href="#sect_criptoa">Mineração de Cripto Ativos</a></li>
-        <li><a href="#sect_altcoins">AltCoins</a></li>
-    </ul>
-</nav>
+<div class="row_menu_fixo_btc">
+    <div id="menu_fixo_btc">
+        <ul>
+            <li><a href="#sect_bitcoin">Bitcoin o ouro digital</a></li>
+            <li><a href="#sect_criptoa">Mineração de Cripto Ativos</a></li>
+            <li><a href="#sect_altcoins">AltCoins</a></li>
+        </ul>
+    </div>
+</div>
 <main id="main_bit">
     <section id="sect_bitcoin">
         <header id="header_moedas_btc">

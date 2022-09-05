@@ -1,57 +1,42 @@
-* {
-    box-sizing: border-box;
-    margin: 0px auto;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    overflow-x: hidden;/* colocado para retirar o SCROLBAR no eixo-X */
-}
 html {
     scroll-behavior: smooth;
 }
-a {
-    color: #ffffff;
-}
-body {
-    width: 100%;
-    background-color: rgb(2, 14, 1);
-    color: #ffffff;
-}
-
-#nav_menu_fixo {
-    grid-area: navbar;
-    position: fixed;
+/* Definições do MENU de navegação no topop da pagina */
+.row_menu_fixo_btc{
     display: flex;
-    flex-wrap: wrap;
-    flex: 1;
     align-content: center;
     align-items: center;
-    justify-content: space-around;
     width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    top: 40px;
-    right: initial;
-    z-index: 98;
-    background-color: #000000;
 }
-
-#nav_menu_fixo ul {
+#menu_fixo_btc {
+    position: fixed;
+    top: 30px;
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    z-index: 98;
+}
+#menu_fixo_btc ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: var(--azulScuro);
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     min-height: 25px;
     max-width: 1200px;
     margin: 0px auto 0px;
-    text-transform: uppercase;
-    border: 1px solid green;
+    padding: 3px 10px;
+    text-transform: uppercase;    
+}
+#menu_fixo_btc li{
+    background-color: var(--transp);
 }
 
 #main_bit {
-    grid-area: main;
     display: flex;
     flex-wrap: wrap;
     align-content: center;

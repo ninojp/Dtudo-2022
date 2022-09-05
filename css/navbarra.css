@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* CSS exclusivo para esta Página NAVBARRA.css */
+/* `Como este vai carreagar em todas as paginas eu ESTOU deixando as definições GERAIS DO CSS AQUI
+e NO PHP do navbarra.PHP, como carrear o BOOTSTRAP CSS e SCRIPT, FONT-AWESOME e GOOGLE FONTs*/
 /* Google Fontes escolhidas
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Cutive Mono', monospace;
@@ -32,7 +33,11 @@ font-family: 'Ubuntu', sans-serif; */
     --NiceHash: rgba(1,13,21,1);
     --NiceHash2: rgba(5,35,57,1);
 }
-
+body{
+    display: block;
+    background-color: var(--preto) !important;
+    color: var(--azulClaro);
+}
 /* Tag NAV com o ID=nav_barra tag principal q engloba todo o conteudo */
 #nav_barra{
     position: fixed;
@@ -86,7 +91,7 @@ font-family: 'Ubuntu', sans-serif; */
     position: absolute;
     left: 90px;
     bottom: -2px;
-    background-color: var(--azulScuro);
+    background-color: var(--transp);
 }
 .div_dropd ul, li{
     background-color: var(--preto80);

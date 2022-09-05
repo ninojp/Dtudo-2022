@@ -1,23 +1,6 @@
 @charset "UTF-8";
 /* Crie 27/08/22, um novo CSS para meu site para implementar novas tecnicas aprendidas no cruso PHP Developer - CELKE */
 
-/* Google Fontes escolhidas
-font-family: 'Cinzel Decorative', cursive;
-font-family: 'Cutive Mono', monospace;
-font-family: 'Kalam', cursive;
-font-family: 'Ubuntu', sans-serif; */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: block;
-    background-color: #000 !important;
-    color: var(--azulClaro);
-}
-
 /* MAIN div conteiner com o conteudo central da pagina */
 #main_princ{
     display: flex;

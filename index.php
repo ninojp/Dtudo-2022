@@ -12,7 +12,7 @@ include_once('conecta.php');?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dtudo 2022</title>
     <!-- StyleGeral.css - CSS local e geral para todas as paginas -->
-    <link rel="stylesheet" type="text/css" href="css/StyleGeral.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <!-- Meu favicon atual -->
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
