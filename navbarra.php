@@ -1,4 +1,3 @@
-<?php include('conecta.php');?>
 <!-- BOOTSTRAP CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- AWESOME-FONTs com a CDNjs -->
@@ -15,9 +14,9 @@
             </div>
             <!----- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------>
             <?php  if (empty($_SESSION['id'])) { ?>
-            <div id="div_dropd" class="dropdown">
+            <div class="div_dropd dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" alt="Link para Login" title="Link para Login"><i class="fa-solid fa-users"></i> Login</a>
-                <ul class="dropdown-menu dropdown-menu-dark fundo_black_80 fonte_small" aria-labelledby="dropdownMenuButton2">
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_login"><i class="fa-solid fa-user"></i> Login</a></li>
                     <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_cadastrar"><i class="fa-solid fa-user-plus"></i> Cadastrar</a></li>
                     <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_recuperarSenha"><i class="fa-solid fa-user-lock"></i> Recuperar Senha</a></li>
@@ -28,15 +27,15 @@
             if($_SESSION['adm']==0) {
             $consulta_user=$conecta->query("SELECT nome FROM usuario WHERE id_usuario='$_SESSION[id]'");
             $exibe_user=$consulta_user->fetch(PDO::FETCH_ASSOC); ?>
-            <div class="nav-item dropdown float-start fonte_small ms-2">
+            <div class="div_dropd dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"><?php echo $exibe_user['nome'];?></a>
-                <ul class="dropdown-menu dropdown-menu-dark fundo_black_80 fonte_small">
+                <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item nav-link" href="sair.php"><img class="" src="imgs/logout.png">Logout</a></li>
                 </ul>
             </div>
             <!-- SE ESTIVER LOGADO COMO ADMINISTRADOR-->
             <?php } else { ?>
-            <div class="dropdown fonte_small ms-2">
+            <div class="div_dropd dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">NinoJP</a>
                 <ul class="dropdown-menu dropdown-menu-dark fundo_black_80 fonte_small" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item nav-link" href="anime_inserir_form.php" target="_blank">Inserir</a></li>
@@ -64,9 +63,7 @@
 		<div class="modal-content">
 			<div class="topo_modal">
                 <div class="div_tit_modal">Fazer o Login</div>
-				<!-- <div class="div_bt_fechar"> -->
-                <button class="bt_fechar" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
-				<!-- </div> -->
+				<button class="bt_fechar" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
 			</div>
 			<div class="div_body_modal modal-body container">
                 <div class="body_row_modal row justify-content-center">

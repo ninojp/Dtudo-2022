@@ -1,6 +1,5 @@
-<?php
-session_start();
-include('conecta.php');
+<?php session_start();
+include_once('conecta.php');
 $recebe_email = $_POST['email'];
 $recebe_senha = $_POST['senha']; 
 $consulta = $conecta->query("SELECT id_usuario, email, senha, adm FROM usuario WHERE email='$recebe_email' AND senha='$recebe_senha'");

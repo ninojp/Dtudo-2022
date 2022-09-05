@@ -1,6 +1,8 @@
+<?php session_start();
+ob_start();
+include_once('conecta.php');?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +16,10 @@
     <!-- Meu favicon atual -->
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
-
 <body>
     <!-- navbarra.php - Pagina externa -->
     <?php include_once('navbarra.php');
-        include_once('header.php'); ?>
+        include_once('header.php');?>
     <main id="main_princ">
         <!--GRID ITEM e também um GRID CONTEINER-->
         <div class="divs_link" id="div_ti">
