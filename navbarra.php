@@ -87,7 +87,7 @@
                             <a href="" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal">Recuperar sua senha?</a>
                         </div>
                         <div class="cadast_usuario">
-                            <a href="#" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal" title="Link para Cadastrar umnovo Usuário">Cadastrado novo usuário?</a>
+                            <a href="#" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal" title="Link para Cadastrar umnovo Usuário">Cadastrar novo usuário?</a>
                         </div>
                     </div>
                 </div>
