@@ -16,7 +16,7 @@ include_once('conecta.php');?>
 <body>
 <?php include_once 'navbarra.php';
 	include_once 'header.php';?>
-<!-- MAIN -> DIV classe CONTAINER-FLUID -->
+<!-- MAIN -> DIV classe=main_cont -->
 <main class="main_cont">
 	<div class="div_row">
 		<div class="div_col">
@@ -28,8 +28,8 @@ include_once('conecta.php');?>
 			<div class="div_body">
 				<h3>O usuário foi criado com Sucesso.</h3>
 			</div>
-			<div class="div_input_form">			
-				<input class="btn_submit_modal" type="submit" data-bs-target="#Modal_login" data-bs-toggle="modal" value="Fazer o Login">
+			<div class="div_input_btn">			
+				<input class="input_btn" type="submit" data-bs-target="#Modal_login" data-bs-toggle="modal" value="Fazer o Login">
 			</div>
 		</div>
 	</div><!-- Fechamento da ROW CENTRAL  -->

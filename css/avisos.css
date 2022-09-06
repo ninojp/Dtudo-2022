@@ -9,9 +9,8 @@ font-family: 'Ubuntu', sans-serif; */
 main .main_cont{
     display: flex;
     width: 100%;
-    /* height: 100%; */
-    
 }
+/* DIV da linha principal dentro do main */
 .div_row{
     display: flex;
     width: 100%;
@@ -21,6 +20,7 @@ main .main_cont{
     padding: 1em 0;
     /* height: 100vh; */
 }
+/* DIV da COLUNA principal das paginas de aviso */
 .div_col{
     display: block;
     max-width: 600px;
@@ -29,6 +29,7 @@ main .main_cont{
     box-shadow: 0px 1px 9px 1px var(--azulClaro);
     border-radius: 10px;
 }
+/* DIV do TOPO das paginas de aviso onde vai o titulo dos avisos */
 .div_topo{
     display: flex;
     align-items: center;
@@ -45,6 +46,7 @@ main .main_cont{
     font-size: 2em;
     font-weight: 500;
 }
+/* DIV do corpo das paginas de aviso */
 .div_body{
     display: flex;
     align-items: center;
@@ -52,4 +54,41 @@ main .main_cont{
 }
 .div_body h3{
     padding: 2em;
+}
+/* DIV do Botão de INPUTs */
+.div_input_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.input_btn{
+    display: flex;
+    background-color: var(--azulScuro);
+    color: var(--branco);
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px solid var(--azulScuro);
+    padding: 0.5em 2em;
+}
+.input_btn:hover{
+    display: flex;
+    background-color: var(--azulEscuro);
+    color: var(--branco);
+    border-radius: 10px;
+    border: 2px solid var(--branco);
+    padding: 0.5em 2em;
+}
+/* DIV das parte inferior das paginas de aviso onde ficam os LINKs para os MODAIs */
+.row_links{
+    display: block;
+    text-align: left;
+    padding: 1em 2em;
+}
+
+.div_link{
+    color: var(--azulClaro);
+    font-size: 1em;
+    padding: 0.5em;
 }
