@@ -34,7 +34,7 @@ font-family: 'Ubuntu', sans-serif; */
     --NiceHash2: rgba(5,35,57,1);
 }
 body{
-    display: block;
+    min-height: 100vh;
     background-color: var(--preto) !important;
     color: var(--azulClaro);
 }
@@ -123,7 +123,7 @@ body{
     background-color: var(--azulEscuro);
     color: var(--branco);
 }
-/* DIV class=topo_modal Parte superior do modal com o titulo e o botão fechar */
+/* DIV class=topo_modal Parte superior do modal com o titulo e o botão fechar MODAL */
 .topo_modal{
     display: flex;
     position: relative;
@@ -137,15 +137,19 @@ body{
     color: var(--branco);
     border-radius: 7px 7px 0px 0px;
 }
-/* DIV class=div_tit_modal com o titulo da janela modal */
+/* DIV class=div_tit_modal com o titulo da janela MODAL */
 .div_tit_modal{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
+}
+/* DIV class=div_tit_modal com o titulo H2 da janela MODAL */
+.div_tit_modal h2{
+    display: flex;
     font-size: 2em;
     font-weight: 600;
     font-family: 'Kalam', cursive;
-    text-align: center;
-    padding-left: 4em;
 }
 .div_bt_fechar{
     display: flex;

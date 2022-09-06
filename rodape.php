@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="css/rodapeStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/rodape.css">
 </head>
     <footer id="footer_rodape">
         <div id="div_esquerda">

@@ -1,8 +1,11 @@
-#footer_rodape {
+body{
     position: relative;
+}
+#footer_rodape {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
-    bottom: -40px;
+    bottom: 0px;
     width: 100%;
     align-items: center;
     justify-content: space-between;

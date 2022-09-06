@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Crie 27/08/22, um novo CSS para meu site para implementar novas tecnicas aprendidas no cruso PHP Developer - CELKE */
-
+body{
+    min-height: 100vh;
+}
 /* MAIN div conteiner com o conteudo central da pagina */
 #main_princ{
     display: flex;

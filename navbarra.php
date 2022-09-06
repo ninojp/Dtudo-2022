@@ -26,22 +26,22 @@
             <!-- SE USUARIO ESTIVER LOGADO como usuário comum --------->
             <?php } else {
             if($_SESSION['adm']==0) {
-            $consulta_user=$conecta->query("SELECT nome FROM usuario WHERE id_usuario='$_SESSION[id]'");
+            $consulta_user=$conecta->query("SELECT nome, apelido FROM usuario WHERE id_usuario='$_SESSION[id]'");
             $exibe_user=$consulta_user->fetch(PDO::FETCH_ASSOC); ?>
             <div class="div_dropd dropdown">
-                <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"><?php echo $exibe_user['nome'];?></a>
+                <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"><?php echo $exibe_user['apelido'];?></a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item nav-link" href="sair.php"><img class="" src="imgs/logout.png">Logout</a></li>
+                    <li><a class="dropdown-item nav-link" href="sair.php">Logout</a></li>
                 </ul>
             </div>
             <!-- SE ESTIVER LOGADO COMO ADMINISTRADOR-->
             <?php } else { ?>
             <div class="div_dropd dropdown">
-                <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">NinoJP</a>
+                <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">Nino JP</a>
                 <ul class="dropdown-menu dropdown-menu-dark fundo_black_80 fonte_small" aria-labelledby="dropdownMenuButton2">
-                    <li><a class="dropdown-item nav-link" href="anime_inserir_form.php" target="_blank">Inserir</a></li>
-                    <li><a class="dropdown-item nav-link" href="anime_listar.php" target="_blank">Alterar</a></li>
-                    <li><a class="dropdown-item nav-link" href="sair.php"><img class="" src="imgs/logout.png">Logout</a></li>
+                    <li><a class="dropdown-item nav-link" href="anime_inserir_form.php" target="_blank">Inserir Anime</a></li>
+                    <li><a class="dropdown-item nav-link" href="anime_listar.php" target="_blank">Alterar Anime</a></li>
+                    <li><a class="dropdown-item nav-link" href="sair.php">Logout</a></li>
                 </ul>
             </div>
             <?php } } ?>
@@ -63,7 +63,7 @@
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
 			<div class="topo_modal">
-                <div class="div_tit_modal">Fazer o Login</div>
+                <div class="div_tit_modal"><h2>Fazer o Login</h2></div>
 				<button class="bt_fechar" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
 			</div>
 			<div class="div_body_modal modal-body container">
@@ -72,11 +72,11 @@
                         <form class="form_modal" method="post" action="validaUsuario.php" name="logon">
                             <div class="div_input_form">
                                 <i class="icon_input fa-solid fa-envelope-circle-check"></i>
-                                <input class="input_form_modal" name="email" type="email" aria-label="Sizing example input" placeholder="Digite seu @e-mail" aria-describedby="inputGroup-sizing-sm" required id="email">
+                                <input class="input_form_modal" name="email" type="email" aria-label="Sizing example input" placeholder="Digite seu @e-mail" aria-describedby="inputGroup-sizing-sm" required>
                             </div>
                             <div class="div_input_form">
                                 <i class="icon_input fa-solid fa-key"></i>
-                                <input class="input_form_modal" name="senha" type="password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required id="senha" placeholder="Digite sua Senha!">
+                                <input class="input_form_modal" name="senha" type="current-password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required placeholder="Digite sua Senha!">
                             </div>
                             <div class="div_input_form">			
                                 <input class="btn_submit_modal" type="submit" value="Fazer o Login">
@@ -98,52 +98,57 @@
 </div>
 <!-- Modal para CADASTRAR NOVO usuário -->
 <div class="modal fade fundo_black_40" id="Modal_cadastrar" aria-hidden="true" aria-labelledby="Modal_cadastrarLabel" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content fundo_black_80">
-    <div class="row position-relative">
-        <div class="col-1 position-absolute top-0 end-0">
-            <button type="button" class="meu_btn" data-bs-dismiss="modal" aria-label="Close">X</button>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="topo_modal">
+                <div class="div_tit_modal"><h2>Cadastrar Novo Usuário</h2></div>
+                <button class="bt_fechar" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="div_body_modal modal-body container">
+                <div class="body_row_modal row justify-content-center">
+                    <div class="col-lg-12 col-xl-12 col-xxl-12">
+                        <form method="post" action="inserirUsuario.php" name="logon">
+                            <div class="div_input_form">
+                            <i class="icon_input fa-solid fa-envelope"></i>
+                                <input name="email" type="email" class="input_form_modal" required placeholder="Digite seu @E-mail">
+                            </div>
+                            <div class="div_input_form">
+                            <i class="icon_input fa-solid fa-key"></i>
+                                <input name="senha" type="current-password" class="input_form_modal" required placeholder="Criar uma senha">
+                            </div>
+                            <div class="div_input_form">
+                                <i class="icon_input fa-solid fa-file-signature"></i>
+                                <input name="nome" type="text" class="input_form_modal" required id="nome" placeholder="Digite seu Nome">
+                            </div>
+                            <div class="div_input_form">
+                                <i class="icon_input fa-solid fa-file-signature"></i>
+                                <input name="apelido" type="text" class="input_form_modal" required id="apelido" placeholder="Digite como deseja ser chamado">
+                            </div>
+                            <div class="div_input_form">
+                                <i class="icon_input fa-solid fa-location-dot"></i>
+                                <input name="endereco" type="text" class="input_form_modal" id="endereco" placeholder="Digite seu endereço (opcional)">
+                            </div>
+                            <div class="div_input_form">
+                                <i class="icon_input fa-solid fa-mobile-screen"></i>
+                                <input name="telefone" type="text" class="input_form_modal" id="telefone" placeholder="Digite seu telefone (opcional)">
+                            </div>
+                            <div class="div_input_form">			
+                                <input class="btn_submit_modal" type="submit" value="Cadastrar Usuário">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row_recup_senha row">
+                        <div class="recup_senha">
+                            <a href="" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal">Recuperar sua senha?</a>
+                        </div>
+                        <div class="cadast_usuario">
+                            <a href="#" data-bs-target="#Modal_login" data-bs-toggle="modal" title="Link para Cadastrar umnovo Usuário">Lembrou seus dados? Fazer Login!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="modal-body"><br>
-        <fieldset>
-        <legend>Cadastrar um Novo Usuário</legend>
-            <form method="post" action="inserirUsuario.php" name="logon">
-                <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input name="nome" type="text" class="form-control" required id="nome">
-                </div>
-                <div class="form-group">
-                        <label for="apelido">Apelido</label>
-                        <input name="apelido" type="text" class="form-control" required id="apelido">
-                </div>
-                <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input name="email" type="email" class="form-control" required id="email">
-                </div>
-                <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input name="senha" type="password" class="form-control" required id="senha">
-                </div>
-                <div class="form-group">
-                        <label for="endereco">Endereço</label>
-                        <textarea name="endereco" rows="2" class="form-control" id="endereco"></textarea>
-                </div>
-                <div class="form-group">
-                        <label for="telefone">Telefone</label>
-                        <input name="telefone" type="text" class="form-control" id="telefone">
-                </div>
-                <button type="submit" class="meu_btn mt-4">Cadastrar</button>
-            </form>
-        </fieldset>
-    </div>
-    <div class="modal-footer">
-        <button type="submit" class="meu_btn" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal">
-                    Recuperar Senha</button><br>
-        <button class="meu_btn" data-bs-target="#Modal_login" data-bs-toggle="modal">Login</button>
-    </div>
-    </div>
-</div>
 </div>
 <!-- Modal para RECUPERAR A SENHA -->
 <div class="modal fade fundo_black_40" id="Modal_recuperarSenha" aria-hidden="true" aria-labelledby="Modal_recuperarSenhaLabel2" tabindex="-1">
@@ -164,7 +169,7 @@
                 <div class="form-group">
                 <form method="post" action="enviarEmail.php" name="logon">
                     <div class="form-group">
-                        <input name="email" type="email" class="form-control" required id="email">
+                        <input name="email" type="email" class="form-control" required>
                     </div>
                     <div class="form-group">
                     <p>Sua senha será enviada para o seu e-mail</p>

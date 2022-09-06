@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php session_start();
-  	  include('conexao.php');
+  	  include('conecta.php');
       include('navbarra.php');/* GRID ITEM, pagina externa navbarra.php */
       include('header.php');  ?> <!-- GRID ITEM cabecalho -->
 <main id="main_princ"><!-- GRID ITEM main -->
