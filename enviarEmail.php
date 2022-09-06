@@ -1,9 +1,9 @@
 <?php 
-include 'conexao.php';
+include 'conecta.php';
 $recebe_email = $_POST['email'];
-$consulta = $conexao->query("SELECT nome,senha,email FROM usuario WHERE email='$recebe_email'");
+$consulta = $conecta->query("SELECT nome,senha,email FROM usuario WHERE email='$recebe_email'");
 if ($consulta->rowCount()==0) {
-	header('location:erro2.php');
+	header('location:erro_email2.php');
 } else {
 	$exibe=$consulta->fetch(PDO::FETCH_ASSOC);
 		$recebe_nome=$exibe['nome'];
@@ -38,6 +38,6 @@ if ($consulta->rowCount()==0) {
 		if (!$mail->send()) {
 			echo "ERRO! Ao tentar enviar E-MAIL!". $mail->ErrorInfo;
 		} else {
-			echo "<html><script>location.href='ok2.php'</script></html>";
+			echo "<html><script>location.href='ok_email_recup.php'</script></html>";
 		}
 } ?>
