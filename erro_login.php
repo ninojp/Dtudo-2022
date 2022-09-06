@@ -33,10 +33,10 @@ include_once('conecta.php');?>
 			</div>
 			<div class="row_links">
 				<div class="div_link">
-					<a href="#" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal">Recuperar sua senha?</a>
+					<a href="#" data-bs-target="#Modal_recuperarSenha" data-bs-toggle="modal" title="Recuperar sua Senha">Recuperar sua senha?</a>
 				</div>
 				<div class="div_link">
-					<a href="#" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal" title="Link para Cadastrar umnovo Usuário">Cadastrar novo usuário?</a>
+					<a href="#" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal" title="Link para Cadastrar um novo Usuário">Cadastrar novo usuário?</a>
 				</div>
 			</div>
 		</div>
