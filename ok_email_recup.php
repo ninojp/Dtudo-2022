@@ -11,7 +11,7 @@
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
 <body>
-<?php include('navbarra.php');
+<?php include('navbar/navbarra.php');
       include('header.php');?> 
 <main class="main_cont">
 	<div class="div_row">

@@ -6,12 +6,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 <!-- Meu CSS local NAVBARRA.CSS -->
-<link rel="stylesheet" type="text/css" href="css/navbarra.css">
+<link rel="stylesheet" type="text/css" href="navbar/css/navbarra.css">
 <nav id="nav_barra">
     <div id="div_container">
         <div id="div_logo_uls">
             <div id="div_img_login">
-                <a href="https://localhost/dtudo/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
+                <a href="https://localhost/dtudo/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="navbar/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
             </div>
             <!----- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------>
             <?php  if (empty($_SESSION['id'])) { ?>
@@ -162,14 +162,16 @@
                 <div class="body_row_modal row justify-content-center">
                     <div class="col-lg-12 col-xl-12 col-xxl-12">
                         <form method="post" action="enviarEmail.php" name="logon">
+                            <div class="div_aviso">
+                                <p>Para recuperar sua senha digite seu email</p>
+                                <p>Sua senha será enviada para o seu email cadastrado</p>
+                            </div>
                             <div class="div_input_form">
-                                <h4>Para Recuperar sua senha Digite seu email</h4>
                                 <i class="icon_input fa-solid fa-envelope"></i>
                                 <input name="email" type="email" class="input_form_modal" required placeholder="Digite seu @E-mail">
                             </div>
                             <div class="div_input_form">			
                                 <input class="btn_submit_modal" type="submit" value="Recuperar Senha">
-                                <h4>Sua senha será enviada para o seu e-mail</h4>
                             </div>
                         </form>
                     </div>
@@ -190,4 +192,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 <!-- meu JS para controle do menu amburguer, responsivo -->
-<script src="js/nav_barra.js"></script>
+<script src="navbar/js/nav_barra.js"></script>

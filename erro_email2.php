@@ -15,7 +15,7 @@ include_once('conecta.php');?>
 	<link rel="stylesheet" type="text/css" href="css/avisos.css">
 </head>
 <body>
-<?php include_once 'navbarra.php';
+<?php include_once('navbar/navbarra.php');
 	include_once 'header.php';?>
 <main class="main_cont">
 	<div class="div_row">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" type="text/css" href="ganhar/css/bitStyle.css">
+    <link rel="Stylesheet" type="text/css" href="css/bitStyle.css">
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
     <title>Dtudo - Bitcoin</title>
 </head>
@@ -49,14 +49,14 @@
         </header>
         <article id="imgs_moedas">
             <h1 data_anima="cima_baixo">Bitcoin o ouro digital</h1>
-            <img src="ganhar/imgs/bitcoin_logo.png" data_anima="esq_dir">      
-            <img src="ganhar/imgs/bitcoin_moeda2.png" data_anima="baixo_cima">
-            <img src="ganhar/imgs/bitcoin_2moedas.png" data_anima="dir_esq">
+            <img src="imgs/bitcoin_logo.png" data_anima="esq_dir">      
+            <img src="imgs/bitcoin_moeda2.png" data_anima="baixo_cima">
+            <img src="imgs/bitcoin_2moedas.png" data_anima="dir_esq">
         </article>
         <article id="video_bitcoin" data_anima="esq_dir">
 		   <h2>Por que o bitcoin é tão revolucionário</h2>
-	       <video controls="controls" poster="ganhar/imgs/Poster-bitcoin-relolucionario_420.jpg">
-		   <source src="ganhar/midia/bitcoin revolucionario_240p.mp4" type="video/mp4"> 
+	       <video controls="controls" poster="imgs/Poster-bitcoin-relolucionario_420.jpg">
+		   <source src="midia/bitcoin revolucionario_240p.mp4" type="video/mp4"> 
     <!--   <source src="media/bitcoin revolucionario_480p.mp4" type="video/mp4"> -->
             Seu navegador não pode exibir este video!<br>
 			<code>:(</code>
@@ -86,7 +86,7 @@
     <section id="sect_criptoa">
         <div id="div_slaveMoney" data_anima="esq_dir">
             <h1>Mineração de Cripto Ativos, Econômia Conpartilhada</h1>
-            <img src="ganhar/imgs/SlaveMoney.png">
+            <img src="imgs/SlaveMoney.png">
         </div>
         <div id="div_graf_preco" data_anima="dir_esq">
             <iframe src="https://br.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&cols=symbol,priceUsd,marketCap,priceBtc,chg24" width="100%" height="600" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Desenvolvido por <a href="https://br.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=TOP_CRYPTOCURRENCIES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a></div>
@@ -129,12 +129,12 @@
         </div>
         <div id="div_thumbs">
             <div id="div_top5"> 
-                <img class="logo_altcoins" src="ganhar/imgs/ethereum.png" onclick="cliqueModal(this)" alt="Ethereum<br> Criado em 20013">
-                <img class="logo_altcoins" src="ganhar/imgs/Cardano-RGB_Logo-Stack-Blue.png" onclick="cliqueModal(this)" alt="<h1>Cardano</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
-                <img class="logo_altcoins" src="ganhar/imgs/Binance_coin.png" onclick="cliqueModal(this)" alt="<h1>Binance</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
-                <img class="logo_altcoins" src="ganhar/imgs/tether_.png" onclick="cliqueModal(this)" alt="<h1>Tether</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
-                <img class="logo_altcoins" src="ganhar/imgs/Dash_coin.jpg" onclick="cliqueModal(this)" alt="<h1>Dash</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
-                <img class="logo_altcoins" src="ganhar/imgs/XRP_coin.jpg" onclick="cliqueModal(this)" alt="<h1>XRP</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
+                <img class="logo_altcoins" src="imgs/ethereum.png" onclick="cliqueModal(this)" alt="Ethereum<br> Criado em 20013">
+                <img class="logo_altcoins" src="imgs/Cardano-RGB_Logo-Stack-Blue.png" onclick="cliqueModal(this)" alt="<h1>Cardano</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
+                <img class="logo_altcoins" src="imgs/Binance_coin.png" onclick="cliqueModal(this)" alt="<h1>Binance</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
+                <img class="logo_altcoins" src="imgs/tether_.png" onclick="cliqueModal(this)" alt="<h1>Tether</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
+                <img class="logo_altcoins" src="imgs/Dash_coin.jpg" onclick="cliqueModal(this)" alt="<h1>Dash</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
+                <img class="logo_altcoins" src="imgs/XRP_coin.jpg" onclick="cliqueModal(this)" alt="<h1>XRP</h1><br> Criado em 2013 <br>Maior Preco: <USD1>$4.000,00</USD1>">
             </div>
         </div>
       </div>
@@ -147,6 +147,6 @@
     <img id="img_modal" class="img_modal">
     <div id="txt_modal" class="txt_modal"></div>
 </div>
-<script type="text/javascript" src="ganhar/js/bitcoinScript.js"></script>
+<script type="text/javascript" src="js/bitcoinScript.js"></script>
 </body>
 </html>

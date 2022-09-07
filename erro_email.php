@@ -15,7 +15,7 @@ include_once('conecta.php');?>
 </head>
 <body>
 <?php
-	include_once 'navbarra.php';
+	include_once 'navbar/navbarra.php';
 	include_once 'header.php';
 ?>
 <main class="main_cont">

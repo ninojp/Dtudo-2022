@@ -196,6 +196,14 @@ body{
     width: 100%;
     margin-bottom: 2em;
 }
+.div_aviso{
+    display: block;
+    font-size: 1em;
+    color: var(--branco);
+    text-align: center;
+    margin: 1em 0em 1em 0em;
+}
+
 /* SPAN icon dentro dos inputs */
 .icon_input{
     position: absolute;

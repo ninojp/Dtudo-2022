@@ -10,7 +10,7 @@
     <title>Dtudo - Tecnologia da Informação</title>
 </head>
 <body> <!--GRID CONTEINER -->
-    <?php include 'navbarra.php';
+    <?php include 'navbar/navbarra.php';
         include 'header.php';?>
 <!--GRID ITEM -->
 <main id="main_ti">

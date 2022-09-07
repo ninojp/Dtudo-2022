@@ -8,7 +8,7 @@
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
 <body>
-    <?php include_once('navbarra.php');
+    <?php include_once('navbar/navbarra.php');
         include_once('header.php');?>
     <h1>Informações Sobre o Site e o Autor</h1><br><hr>
     <div class="container">

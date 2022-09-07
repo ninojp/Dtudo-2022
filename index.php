@@ -18,7 +18,7 @@ include_once('conecta.php');?>
 </head>
 <body>
     <!-- navbarra.php - Pagina externa -->
-    <?php include_once('navbarra.php');
+    <?php include_once('navbar/navbarra.php');
         include_once('header.php');?>
     <main id="main_princ">
         <!--GRID ITEM e também um GRID CONTEINER-->
