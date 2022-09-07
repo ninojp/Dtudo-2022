@@ -97,7 +97,7 @@
 	</div>
 </div>
 <!-- Modal para CADASTRAR NOVO usuário -->
-<div class="modal fade fundo_black_40" id="Modal_cadastrar" aria-hidden="true" aria-labelledby="Modal_cadastrarLabel" tabindex="-1">
+<div class="modal fade" id="Modal_cadastrar" aria-hidden="true" aria-labelledby="Modal_cadastrarLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="topo_modal">
@@ -151,42 +151,40 @@
     </div>
 </div>
 <!-- Modal para RECUPERAR A SENHA -->
-<div class="modal fade fundo_black_40" id="Modal_recuperarSenha" aria-hidden="true" aria-labelledby="Modal_recuperarSenhaLabel2" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content fundo_black_80">
-    <div class="row position-relative">
-        <div class="col-1 position-absolute top-0 end-0">
-            <button type="button" class="meu_btn" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-    </div><br>
-    <div class="modal-body">
-    <fieldset>
-        <legend>Para Recuperar sua senha:</legend>
-            <div class="form-group">
-                <div class="form-group">
-                    <p>Basta digite o e-mail cadastrado no campo abaixo</p>
-                </div>
-                <div class="form-group">
-                <form method="post" action="enviarEmail.php" name="logon">
-                    <div class="form-group">
-                        <input name="email" type="email" class="form-control" required>
+<div class="modal fade" id="Modal_recuperarSenha" aria-hidden="true" aria-labelledby="Modal_recuperarSenhaLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="topo_modal">
+                <div class="div_tit_modal"><h2>Recuperar sua senha</h2></div>
+			    <button class="bt_fechar" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
+		    </div>
+            <div class="div_body_modal modal-body container">
+                <div class="body_row_modal row justify-content-center">
+                    <div class="col-lg-12 col-xl-12 col-xxl-12">
+                        <form method="post" action="enviarEmail.php" name="logon">
+                            <div class="div_input_form">
+                                <h4>Para Recuperar sua senha Digite seu email</h4>
+                                <i class="icon_input fa-solid fa-envelope"></i>
+                                <input name="email" type="email" class="input_form_modal" required placeholder="Digite seu @E-mail">
+                            </div>
+                            <div class="div_input_form">			
+                                <input class="btn_submit_modal" type="submit" value="Recuperar Senha">
+                                <h4>Sua senha será enviada para o seu e-mail</h4>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                    <p>Sua senha será enviada para o seu e-mail</p>
-                    <button type="submit" class="meu_btn">Enviar</button>
+                    <div class="row_recup_senha row">
+                        <div class="recup_senha">
+                            <a href="" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal" title="Link para Cadastrar um novo Usuário">Cadastrar um novo usuário?</a>
+                        </div>
+                        <div class="cadast_usuario">
+                            <a href="#" data-bs-target="#Modal_login" data-bs-toggle="modal" title="Fazer o Login">Lembrou seus dados? Fazer Login!</a>
+                        </div>
                     </div>
-                </form>
                 </div>
             </div>
-    </fieldset>
+        </div>
     </div>
-    <div class="modal-footer">
-        <button type="submit" class="meu_btn" data-bs-target="#Modal_cadastrar" data-bs-toggle="modal">
-                    Novo cadastro</button><br>
-        <button class="meu_btn" data-bs-target="#Modal_login" data-bs-toggle="modal">Login</button>
-    </div>
-    </div>
-</div>
 </div>
 <!-- Bliblioteca JavaScript do BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

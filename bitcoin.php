@@ -141,7 +141,7 @@
     </section>
 
 </main>
-<?php include('rodape.php'); ?>
+<?php include('rodape.php');?>
 <div id="janelaModal" class="janelaModal escondeJanelaModal">
     <span id="btn_fechar" class="fechar_modal">X</span>
     <img id="img_modal" class="img_modal">
