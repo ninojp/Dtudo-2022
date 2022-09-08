@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Variáveis GLOBAIs das CORES da Pagina */
+:root{
+    --branco: #fff;
+    --transp: transparent;
+    --dark: #373636;
+    --preto: #000;
+    --preto20: rgba(0,0,0,0.2);
+    --preto40: rgba(0,0,0,0.4);
+    --preto60: rgba(0,0,0,0.6);
+    --preto80: rgba(0,0,0,0.8);
+    --azulClaro: rgba(13, 110, 253,1);
+    --azulMedio: rgb(4, 9, 170);
+    --azulEscuro: rgba(5,35,57,1);
+    --azulScuro: rgba(1,13,21,1);
+    --gold: #ffd700;
+    /* Cores em teste */
+    --azulScuroAnt: rgb(6, 3, 14);
+    --verdeScuro: #061000;
+    /* NiceHash cores do site - só para tesar */
+    --NiceHash: rgba(1,13,21,1);
+    --NiceHash2: rgba(5,35,57,1);
+    --gelo: #ebeef6;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--preto) !important;
+    color: var(--azulClaro);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--azulScuro);
+    color: var(--azulClaro);
+}

@@ -31,7 +31,7 @@
             <div class="div_dropd dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"><?php echo $exibe_user['apelido'];?></a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item nav-link" href="sair.php">Logout</a></li>
+                    <li><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
                 </ul>
             </div>
             <!-- SE ESTIVER LOGADO COMO ADMINISTRADOR-->
@@ -39,9 +39,10 @@
             <div class="div_dropd dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">Nino JP</a>
                 <ul class="dropdown-menu dropdown-menu-dark fundo_black_80 fonte_small" aria-labelledby="dropdownMenuButton2">
-                    <li><a class="dropdown-item nav-link" href="anime_inserir_form.php" target="_blank">Inserir Anime</a></li>
-                    <li><a class="dropdown-item nav-link" href="anime_listar.php" target="_blank">Alterar Anime</a></li>
-                    <li><a class="dropdown-item nav-link" href="sair.php">Logout</a></li>
+                    <li><a class="dropdown-item nav-link" href="animacao/anime_inserir_form.php" target="_blank">Inserir Anime</a></li>
+                    <li><a class="dropdown-item nav-link" href="animacao/anime_listar.php" target="_blank">Alterar Anime</a></li>
+                    <li><a class="dropdown-item nav-link" href="adm.php" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Area Administrativa</a></li>
+                    <li><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
                 </ul>
             </div>
             <?php } } ?>
