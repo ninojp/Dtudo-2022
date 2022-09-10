@@ -102,10 +102,11 @@ body{
     top: 100%;
     box-shadow: 0px 4px 16px 0px var(--azulClaro);
     background-color: var(--gelo);
-    color: var(--azul);
+    color: var(--azulScuro);
     width: 230px;
     border-radius: 5px;
 }
+/* QUANDO A CLASSE É COLOCADA JUNTO A CLASSE ANTERIOR SEM ESPAÇO, indica q as DUAS classes PERTENCEM ao mesmo ELEMENTO */
 .dropdown_menu.active{
     display: block;
 }
@@ -136,7 +137,6 @@ body{
     white-space: nowrap;/* não vai quebrar a linha */
     overflow: hidden;/* tudo q não couber na div será ocultado */
     padding-left: 5px;
-    color: var(--azulScuro);
 }
 .dropdown_menu li:hover,
 .dropdown_menu .item:hover{
@@ -155,8 +155,30 @@ body{
 /* FIM dropdown do navbar */
 
 /* INICIO do MAIN da pagina ADM */
-main .main_content{
+.main_content{
     display: flex;
 }
-
 /* FIM do MAIN da pagina ADM */
+
+/* Inicio do SIDE-BAR */
+.sidebar{
+    position: sticky;
+    top: 60px;/*testar depois, ainda não muda nada */
+    height: calc(100vh - 100px);
+    width: 250px;
+    overflow: auto;/* para exibir a barra de rolagem se for necessário */
+    flex-shrink: 0;
+    background-color: var(--azulScuro);
+    color: var(--azulClaro);
+    box-shadow: 4px 4px 4px 0px rgba(13, 110, 253, 0.3);
+}
+@media (max-width: 768px) {
+    .sidebar{
+        
+    }
+}
+/* FIM do SIDE-BAR */
+
+/* Inicio do conteudo ADM */
+
+/* FIM do conteudo ADM */
