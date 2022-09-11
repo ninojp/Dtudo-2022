@@ -161,21 +161,40 @@ body{
 /* FIM do MAIN da pagina ADM */
 
 /* Inicio do SIDE-BAR */
-.sidebar{
+.main_content .sidebar{
     position: sticky;
     top: 60px;/*testar depois, ainda não muda nada */
     height: calc(100vh - 100px);
-    width: 250px;
+    width: 60px;
+    /* width: 250px; */
     overflow: auto;/* para exibir a barra de rolagem se for necessário */
+    overflow-x: hidden;
     flex-shrink: 0;
     background-color: var(--azulScuro);
     color: var(--azulClaro);
     box-shadow: 4px 4px 4px 0px rgba(13, 110, 253, 0.3);
 }
 @media (max-width: 768px) {
-    .sidebar{
-        
+    .main_content .sidebar{
+        width: 60px;
+        position: fixed;
+        z-index: 1;
+        width: 0;
     }
+}
+.main_content .sidebar:hover,
+.main_content .sidebar:active{
+    width: 300px;
+}
+.sidebar .sidebar_nav{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s background ease;/* erro testar novamente*/
+    font-size: 16px;
 }
 /* FIM do SIDE-BAR */
 
