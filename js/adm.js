@@ -18,3 +18,9 @@ function DropMenu(seletor){
     VarDropdown.classList.contains("active") ? VarDropdown.classList.remove("active") : VarDropdown.classList.add("active");
     });
 }
+//Side bars
+let VarSidebar = document.querySelector(".sidebar");
+let VarBars = document.querySelector(".bars");
+VarBars.addEventListener("click", () => {
+    VarSidebar.classList.contains("active") ? VarSidebar.classList.remove("active") : VarSidebar.classList.add("active");
+});

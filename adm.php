@@ -56,15 +56,36 @@
     <main class="main_content">
         <!-- Inicio do SIDE-BAR -->
         <div class="sidebar">
-            <a href="index.php" class="sidebar_nav"><i class="fa-solid fa-table-columns"></i><span>Dashboard</span></a>
-            <a href="index.php" class="sidebar_nav"><i class="fa-solid fa-users"></i><span>Listar</span></a>
-            <a href="index.php" class="sidebar_nav"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i><span>Sair</span></a>
+            <a href="index.php" class="sidebar_nav active"><i class="icon fa-solid fa-table-columns"></i><span>Dashboard</span></a>
+            <a href="listar.php" class="sidebar_nav"><i class="icon fa-solid fa-users"></i><span>Listar</span></a>
+            <a href="login.php" class="sidebar_nav"><i class="icon fa-solid fa-person-walking-dashed-line-arrow-right"></i><span>Sair</span></a>
         </div>
         <!-- FIM do SIDE-BAR -->
 
         <!-- Inicio do conteudo do ADM -->
         <div class="wrapper">
-            Listar Usuário
+            <div class="row">
+                <div class="box box_first">
+                    <span class="class=icon fa-solid fa-users"></span>
+                    <span>397</span>
+                    <span>Usuários</span>
+                </div>
+                <div class="box box_second">
+                    <span class="fa-solid fa-truck-fast"></span>
+                    <span>43</span>
+                    <span>Entregas</span>
+                </div>
+                <div class="box box_third">
+                    <span class="fa-solid fa-circle-check"></span>
+                    <span>12</span>
+                    <span>Completas</span>
+                </div>
+                <div class="box box_fourth">
+                    <span class="fa-solid fa-triangle-exclamation"></span>
+                    <span>3</span>
+                    <span>Alertas</span>
+                </div>
+            </div>
         </div>
         <!-- FIM do conteudo do ADM -->
     </main>
