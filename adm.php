@@ -56,7 +56,7 @@
     <main class="main_content">
         <!-- Inicio do SIDE-BAR -->
         <div class="sidebar">
-            <a href="index.php" class="sidebar_nav active"><i class="icon fa-solid fa-table-columns"></i><span>Dashboard</span></a>
+            <a href="index.php" class="sidebar_nav"><i class="icon fa-solid fa-table-columns"></i><span>Dashboard</span></a>
             <a href="listar_dash.php" class="sidebar_nav"><i class="icon fa-solid fa-users"></i><span>Listar</span></a>
             <a href="login.php" class="sidebar_nav"><i class="icon fa-solid fa-person-walking-dashed-line-arrow-right"></i><span>Sair</span></a>
         </div>

@@ -13,25 +13,26 @@ font-family: 'Ubuntu', sans-serif; */
 }
 /* Variáveis GLOBAIs das CORES da Pagina */
 :root{
+    --gelo: rgba(235,238,246,1);
+    --gelo2: rgba(246,247,249,1);
     --branco: #fff;
     --transp: transparent;
-    --dark: #373636;
+    --dark: rgba(55,54,54,1);
     --preto: #000;
     --preto20: rgba(0,0,0,0.2);
     --preto40: rgba(0,0,0,0.4);
     --preto60: rgba(0,0,0,0.6);
     --preto80: rgba(0,0,0,0.8);
-    --azulClaro: rgba(13, 110, 253,1);
-    --azulMedio: rgb(4, 9, 170);
+    --azulClaro: rgba(13,110,253,1);
+    --azulMedio: rgba(4,9,170,1);
     --azulEscuro: rgba(5,35,57,1);
     --azulScuro: rgba(1,13,21,1);
-    --gold: #ffd700;
-    /* Cores em teste */
-    --azulScuroAnt: rgb(6, 3, 14);
-    --verdeScuro: #061000;
-    /* NiceHash cores do site - só para tesar */
-    --NiceHash: rgba(1,13,21,1);
-    --NiceHash2: rgba(5,35,57,1);
+    --gold: rgba(255,215,0,1);
+    --laranja: rgba(240,191,76,1);
+    --vermelho: rgba(172,2,2,1);
+    --verdeScuro: rgba(6,16,0,1);
+    --verdeEscuro: rgba(16,44,0,1);
+    --verdeClaro: rgba(27,74,0,1);
 }
 body{
     min-height: 100vh;

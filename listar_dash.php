@@ -67,7 +67,9 @@
             <div class="row">
                 <div class="top_list">
                     <span class="title_content">Listar</span>
-                    <div class="top_list_right">Botão</div>
+                    <div class="top_list_right">
+                        <button class="btn_success" type="button">Cadastrar</button>
+                    </div>
                 </div>
                 <table class="table_list">
                     <thead class="list_head">
@@ -83,22 +85,44 @@
                             <td class="list_body_content">1</td>
                             <td class="list_body_content">Cesar</td>
                             <td class="list_body_content">cesar@celk.com.br</td>
-                            <td class="list_body_content">Visualizar Editar Apagar</td>
+                            <td class="list_body_content">
+                                <button class="btn_primary" type="button">Visualizar</button>
+                                <button class="btn_warning" type="button">Editar</button>
+                                <button class="btn_danger" type="button">Apagar</button></td>
                         </tr>
                         <tr>
                             <td class="list_body_content">2</td>
                             <td class="list_body_content">Cesar2</td>
                             <td class="list_body_content">cesar2@celk.com.br</td>
-                            <td class="list_body_content">Visualizar Editar Apagar</td>
+                            <td class="list_body_content">
+                                <button class="btn_primary" type="button">Visualizar</button>
+                                <button class="btn_warning" type="button">Editar</button>
+                                <button class="btn_danger" type="button">Apagar</button></td>
                         </tr>
                         <tr>
                             <td class="list_body_content">3</td>
                             <td class="list_body_content">Cesar3</td>
                             <td class="list_body_content">cesar3@celk.com.br</td>
-                            <td class="list_body_content">Visualizar Editar Apagar</td>
+                            <td class="list_body_content">
+                                <button class="btn_primary" type="button">Visualizar</button>
+                                <button class="btn_warning" type="button">Editar</button>
+                                <button class="btn_danger" type="button">Apagar</button></td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- Inicio da paginação -->
+                <div class="content_pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="active">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                <!-- FIM da paginação -->
             </div>
         </div>
         <!-- FIM do conteudo do ADM -->
