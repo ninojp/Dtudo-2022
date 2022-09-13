@@ -28,10 +28,12 @@ font-family: 'Ubuntu', sans-serif; */
     /* Cores em teste */
     --azulScuroAnt: rgb(6, 3, 14);
     --verdeScuro: #061000;
+    --verdeClaro: #123100;
     /* NiceHash cores do site - só para tesar */
     --NiceHash: rgba(1,13,21,1);
     --NiceHash2: rgba(5,35,57,1);
     --gelo: #ebeef6;
+    --gelo2: #f6f7f9;
 }
 body{
     min-height: 100vh;
@@ -229,10 +231,98 @@ body{
 
 /* Inicio do conteudo do ADM */
 .main_content .wrapper{
-    
+    width: 100%;
+    padding: 15px;
+    background-color: var(--azulEscuro);
 }
-/* Inicio do conteudo do ADM */
+.main_content .row{
+    background-color: var(--branco);
+    border-radius: 6px;
+}
+.wrapper .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+}
 
-/* FIM do conteudo ADM */
+/* Inicio do Dashboard */
+.row .box{
+    position: relative;
+    display: flex;
+    width: 23%;
+    height: 150px;
+    margin: 5px 1%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0px 4px 16px 0px var(--azulClaro);
+}
+.row .box_first{
+    background-color: var(--azulEscuro);
+}
+.row .box_second{
+    background-color: var(--dark);
+}
+.row .box_third{
+    background-color: var(--verdeClaro);
+}
+.row .box_fourth{
+    background-color: var(--gold);
+}
+.box span{
+    margin: 5px 0;
+    font-size: 17px;
+    position: relative;
+}
+@media (max-width: 1024px) {
+    .row .box{
+        width: 48%;
+    }
+}
+@media (max-width: 768px) {
+    .row .box{
+        width: 98%;
+    }
+}
+/* FIM do Dashboard */
+
+/* INICIO do Listar */
+.row .top_list{
+    width: 100%;
+    overflow: hidden;
+}
+.top_list .title_content{
+    float: left;
+    color: var(--azulClaro);
+    padding: 10px 16px;
+    font-size: 17px;
+}
+.top_list .top_list_right{
+    padding: 10px 5px 5px 0;
+    float: right;
+}
+.table_list{
+    margin-top: 15px;
+    width: 100%;
+}
+.table_list .list_head .list_head_content{
+    background-color: var(--gelo);
+    color: var(--azulScuro);
+    padding: 10px;
+}
+.table_list .list_body .list_body_content{
+    background-color: var(--gelo2);
+    color: var(--azulEscuro);
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* FIM do Listar */
+
 
 /* FIM do conteudo ADM */
