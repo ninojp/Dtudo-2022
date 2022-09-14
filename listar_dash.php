@@ -56,8 +56,9 @@
     <main class="main_content">
         <!-- Inicio do SIDE-BAR -->
         <div class="sidebar">
-            <a href="index.php" class="sidebar_nav active"><i class="icon fa-solid fa-table-columns"></i><span>Dashboard</span></a>
-            <a href="listar.php" class="sidebar_nav"><i class="icon fa-solid fa-users"></i><span>Listar</span></a>
+            <a href="adm.php" class="sidebar_nav"><i class="icon fa-solid fa-table-columns"></i><span>Dashboard</span></a>
+            <a href="listar_dash.php" class="sidebar_nav active"><i class="icon fa-solid fa-table-list"></i><span>Listar</span></a>
+            <a href="formulario_dash.php" class="sidebar_nav"><i class="icon fa-brands fa-wpforms"></i><span>Formulário</span></a>
             <a href="login.php" class="sidebar_nav"><i class="icon fa-solid fa-person-walking-dashed-line-arrow-right"></i><span>Sair</span></a>
         </div>
         <!-- FIM do SIDE-BAR -->
@@ -66,10 +67,9 @@
         <div class="wrapper">
             <div class="row">
                 <div class="top_list">
-                    <span class="title_content">
-                    <button class="btn_info" type="button">Listar</button></span>
+                    <span class="title_content"><h2>Dashboard - Listar</h2></span>
                     <div class="top_list_right">
-                        <button class="btn_success" type="button">Cadastrar</button>
+                    <a href="formulario_dash.php" class="btn_success" type="button">Cadastrar</a>
                     </div>
                 </div>
                 <table class="table_list">
@@ -122,7 +122,7 @@
                                     <button class="drop_btn_action" onclick="actionDrop(1)">Ação</button>
                                     <div id="actionDrop1" class="drop_action_item">
                                         <a href="#">Vizualizar 1</a>
-                                        <a href="#">Editar</a>
+                                        <a href="formulario_dash.php">Editar</a>
                                         <a href="#">Apagar</a>
                                     </div> 
                                 </div>    
@@ -140,7 +140,7 @@
                                     <button class="drop_btn_action" onclick="actionDrop(2)">Ação</button>
                                     <div id="actionDrop2" class="drop_action_item">
                                         <a href="#">Vizualizar 2</a>
-                                        <a href="#">Editar</a>
+                                        <a href="formulario_dash.php">Editar</a>
                                         <a href="#">Apagar</a>
                                     </div> 
                                 </div>
@@ -158,7 +158,7 @@
                                     <button class="drop_btn_action" onclick="actionDrop(3)">Ação</button>
                                     <div id="actionDrop3" class="drop_action_item">
                                         <a href="#">Vizualizar 3</a>
-                                        <a href="#">Editar</a>
+                                        <a href="formulario_dash.php">Editar</a>
                                         <a href="#">Apagar</a>
                                     </div> 
                                 </div>
