@@ -66,7 +66,8 @@
         <div class="wrapper">
             <div class="row">
                 <div class="top_list">
-                    <span class="title_content">Listar</span>
+                    <span class="title_content">
+                    <button class="btn_info" type="button">Listar</button></span>
                     <div class="top_list_right">
                         <button class="btn_success" type="button">Cadastrar</button>
                     </div>
@@ -76,7 +77,10 @@
                         <tr>
                             <th class="list_head_content">ID</th>
                             <th class="list_head_content">Nome</th>
-                            <th class="list_head_content">E-mail</th>
+                            <th class="list_head_content tb_sm_none">E-mail</th>
+                            <th class="list_head_content tb_sm_none">Coluna 1</th>
+                            <th class="list_head_content tb_md_none">Coluna 2</th>
+                            <th class="list_head_content tb_lg_none">Coluna 3</th>
                             <th class="list_head_content">Ações</th>
                         </tr>
                     </thead>
@@ -84,29 +88,81 @@
                         <tr>
                             <td class="list_body_content">1</td>
                             <td class="list_body_content">Cesar</td>
-                            <td class="list_body_content">cesar@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">cesar@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">Coluna01</td>
+                            <td class="list_body_content tb_md_none">Coluna02</td>
+                            <td class="list_body_content tb_lg_none">Coluna03</td>
                             <td class="list_body_content">
                                 <button class="btn_primary" type="button">Visualizar</button>
                                 <button class="btn_warning" type="button">Editar</button>
-                                <button class="btn_danger" type="button">Apagar</button></td>
+                                <button class="btn_danger" type="button">Apagar</button>
+                            </td>
                         </tr>
                         <tr>
                             <td class="list_body_content">2</td>
                             <td class="list_body_content">Cesar2</td>
-                            <td class="list_body_content">cesar2@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">cesar2@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">Coluna01</td>
+                            <td class="list_body_content tb_md_none">Coluna02</td>
+                            <td class="list_body_content tb_lg_none">Coluna03</td>
                             <td class="list_body_content">
-                                <button class="btn_primary" type="button">Visualizar</button>
-                                <button class="btn_warning" type="button">Editar</button>
-                                <button class="btn_danger" type="button">Apagar</button></td>
+                                <button class="btn_primary" type="button"><i class="fa-solid fa-eye"></i></button>
+                                <button class="btn_warning" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn_danger" type="button"><i class="fa-solid fa-trash-can"></i></button></td>
                         </tr>
                         <tr>
                             <td class="list_body_content">3</td>
                             <td class="list_body_content">Cesar3</td>
-                            <td class="list_body_content">cesar3@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">cesar3@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">Coluna01</td>
+                            <td class="list_body_content tb_md_none">Coluna02</td>
+                            <td class="list_body_content tb_lg_none">Coluna03</td>
                             <td class="list_body_content">
-                                <button class="btn_primary" type="button">Visualizar</button>
-                                <button class="btn_warning" type="button">Editar</button>
-                                <button class="btn_danger" type="button">Apagar</button></td>
+                                <div class="drop_action">
+                                    <button class="drop_btn_action" onclick="actionDrop(1)">Ação</button>
+                                    <div id="actionDrop1" class="drop_action_item">
+                                        <a href="#">Vizualizar 1</a>
+                                        <a href="#">Editar</a>
+                                        <a href="#">Apagar</a>
+                                    </div> 
+                                </div>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list_body_content">4</td>
+                            <td class="list_body_content">Cesar4</td>
+                            <td class="list_body_content tb_sm_none">cesar4@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">Coluna01</td>
+                            <td class="list_body_content tb_md_none">Coluna02</td>
+                            <td class="list_body_content tb_lg_none">Coluna03</td>
+                            <td class="list_body_content">
+                                <div class="drop_action">
+                                    <button class="drop_btn_action" onclick="actionDrop(2)">Ação</button>
+                                    <div id="actionDrop2" class="drop_action_item">
+                                        <a href="#">Vizualizar 2</a>
+                                        <a href="#">Editar</a>
+                                        <a href="#">Apagar</a>
+                                    </div> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list_body_content">5</td>
+                            <td class="list_body_content">Cesar5</td>
+                            <td class="list_body_content tb_sm_none">cesar5@celk.com.br</td>
+                            <td class="list_body_content tb_sm_none">Coluna01</td>
+                            <td class="list_body_content tb_md_none">Coluna02</td>
+                            <td class="list_body_content tb_lg_none">Coluna03</td>
+                            <td class="list_body_content">
+                                <div class="drop_action">
+                                    <button class="drop_btn_action" onclick="actionDrop(3)">Ação</button>
+                                    <div id="actionDrop3" class="drop_action_item">
+                                        <a href="#">Vizualizar 3</a>
+                                        <a href="#">Editar</a>
+                                        <a href="#">Apagar</a>
+                                    </div> 
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

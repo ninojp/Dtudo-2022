@@ -318,6 +318,29 @@ body{
     padding: 8px;
     text-align: center;
 }
+@media (max-width: 550px) {
+    .tb_sm_none,
+    .tb_md_none,
+    .tb_lg_none{
+        display: none;
+    }
+}
+@media (max-width: 790px) {
+    .tb_md_none,
+    .tb_lg_none{
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    .tb_lg_none{
+        display: none;
+    }
+}
+@media (max-width: 1290px) {
+    .tb_xxl_none{
+        display: none;
+    }
+}
 /* Inicio da paginação */
 .content_pagination{
     display: flex;
@@ -364,7 +387,102 @@ body{
     color: var(--azulClaro);
 }
 .btn_success{
-
+    background-color: var(--verdeClaro);
+    color: var(--branco);
+    font-size: 15px;
+    padding: 5px 8px;
+    border: 1px solid var(--verdeClaro);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn_success:hover{
+    background-color: var(--gelo2);
+    color: var(--verdeClaro);
+}
+.btn_warning{
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 15px;
+    padding: 5px 8px;
+    border: 1px solid var(--laranja);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn_warning:hover{
+    background-color: var(--gelo2);
+    color: var(--laranja);
+}
+.btn_danger{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: 15px;
+    padding: 5px 8px;
+    border: 1px solid var(--vermelho);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn_danger:hover{
+    background-color: var(--gelo2);
+    color: var(--vermelho);
+}
+.btn_info{
+    background-color: var(--azulMedio);
+    color: var(--branco);
+    font-size: 15px;
+    padding: 5px 8px;
+    border: 1px solid var(--azulMedio);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn_info:hover{
+    background-color: var(--gelo2);
+    color: var(--azulMedio);
+}
+/* Botão DropDown */
+.drop_btn_action{
+    background-color: var(--azulMedio);
+    color: var(--branco);
+    font-size: 15px;
+    padding: 5px 8px;
+    border: 1px solid var(--azulMedio);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.drop_btn_action:hover,
+.drop_btn_action:focus{
+    background-color: var(--gelo2);
+    color: var(--azulMedio);
+}
+.drop_action{
+    position: relative;
+    display: inline-block;
+}
+.drop_action_item{
+    display: none;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    background-color: var(--branco);
+    min-width: 130px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px var(--preto40);
+}
+.drop_action_item a{
+    padding: 8px 12px 4px 12px;
+    text-decoration: none;
+    display: block;
+}
+.drop_action_item a:hover{
+    background-color: var(--gelo);
+}
+.drop_action_item.show_drop_action{
+    display: block;
+    border-radius: 7px;
 }
 /* FIM personalizar BOTÕES */
 

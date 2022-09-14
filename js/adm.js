@@ -24,3 +24,25 @@ let VarBars = document.querySelector(".bars");
 VarBars.addEventListener("click", () => {
     VarSidebar.classList.contains("active") ? VarSidebar.classList.remove("active") : VarSidebar.classList.add("active");
 });
+
+// INICIO do botão AÇÃO DropDrown (vizualizar, editar, apagar) 
+function actionDrop(id){
+    closeDropAction();
+    document.getElementById("actionDrop"+id).classList.toggle("show_drop_action");
+}
+window.onclick = function(event){
+    if(!event.target.matches(".drop_btn_action")){
+        // document.getElementById("actionDrop").classList.remove("show_drop_action");
+    closeDropAction();
+    }
+}
+function closeDropAction(){
+    var DropDowns = document.getElementsByClassName("drop_action_item");
+    var i;
+    for (i = 0; i < DropDowns.length; i++) {
+       var OpenDropDown = DropDowns[i];
+       if(OpenDropDown.classList.contains("show_drop_action")){
+        OpenDropDown.classList.remove("show_drop_action");
+       }
+    }
+}
