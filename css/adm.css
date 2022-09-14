@@ -23,6 +23,7 @@ font-family: 'Ubuntu', sans-serif; */
     --preto40: rgba(0,0,0,0.4);
     --preto60: rgba(0,0,0,0.6);
     --preto80: rgba(0,0,0,0.8);
+    --azulClarinho: rgb(163, 198, 251);
     --azulClaro: rgba(13,110,253,1);
     --azulMedio: rgba(4,9,170,1);
     --azulEscuro: rgba(5,35,57,1);
@@ -487,5 +488,47 @@ body{
     border-radius: 7px;
 }
 /* FIM personalizar BOTÕES */
+
+/* INICIO do Formulário */
+.wrapper .content_form{
+    width: 100%;
+    padding: 1em;
+}
+.form_adm{
+    width: 100%;
+    position: relative;
+    margin: .5em auto 0 auto;
+}
+.row_input{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.1em 1.5em;
+    margin-bottom: 1.1em;
+}
+.title_input{
+    color: var(--azulScuro);
+    font-size: 1.1em;
+}
+input.input_form,
+textarea.input_form,
+select.input_form{
+    width: 100%;
+    padding: .5em .5em;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1.2px solid var(--azulClarinho);
+    margin-top: 5px;
+}
+textarea.input_form{
+    resize: none;
+}
+input.input_form:focus,
+textarea.input_form:focus,
+select.input_form:focus{
+    outline: none;
+    border: 1.5px solid var(--azulClaro);
+}
+/* FIM do Formulário */
 
 /* FIM do conteudo ADM */
