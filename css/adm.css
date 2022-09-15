@@ -531,4 +531,29 @@ select.input_form:focus{
 }
 /* FIM do Formulário */
 
+/* INICIO da pagina Visualizar */
+.content_adm{
+    width: 100%;
+    padding: 1em;
+    background-color: var(--gelo2);
+}
+.content_adm .view_det{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: var(--gelo);
+}
+.view_det .view_det_title{
+    width: 4em;
+    color: var(--azulMedio);
+    font-size: 1em;
+    font-weight: 500;
+    margin: .3em .4em .3em .5em;
+}
+.view_det .view_det_info{
+    width: 100%;
+    padding: 3px 10px;
+}
+/* FIM da pagina Visualizar */
+
 /* FIM do conteudo ADM */
