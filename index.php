@@ -1,6 +1,7 @@
 <?php session_start();
 ob_start();
-include_once('conecta.php');?>
+include_once('conecta.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

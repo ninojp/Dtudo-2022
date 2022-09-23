@@ -58,6 +58,7 @@
             <i id="icon_menu" class="fa-solid fa-bars icon_menu"></i>
         </div>
     </div>
+    
 </nav>
 <!-- Inicio do bloco da janela MODAL para fazer LOGIN -->
 <div class="modal fade" id="Modal_login" tabindex="-1" aria-labelledby="Modal_loginLabel" aria-hidden="true">
