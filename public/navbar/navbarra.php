@@ -1,44 +1,45 @@
-<!-- BOOTSTRAP CSS-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<!-- AWESOME-FONTs com a CDNjs -->
+<!--------------- BOOTSTRAP CSS - Local agora --------------------------------------------------->
+<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+<!--------------- AWESOME-FONTs com a CDNjs ----------------------------------------------------->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<!-- GOOGLE FONTs (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-->
+<!-------------- GOOGLE FONTs (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-<!-- Meu CSS local NAVBARRA.CSS -->
+<!-------------- Meu CSS local NAVBARRA.CSS ------------------------------------------------------>
 <link rel="stylesheet" type="text/css" href="navbar/css/navbarra.css">
+<!--============================================================================================-->
 <nav id="nav_barra">
     <div id="div_container">
         <div id="div_logo_uls">
             <div id="div_img_login">
-                <a href="https://localhost/dtudo/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="navbar/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
+                <a href="https://localhost/dtudo/public/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="navbar/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
             </div>
-            <!----- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------>
-            <?php  if (empty($_SESSION['id'])) { ?>
-            <div class="div_dropd dropdown">
-                <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" alt="Link para Login" title="Link para Login"><i class="fa-solid fa-users"></i> Login</a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+<!--------------- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------------------------------->
+            <?php if (empty($_SESSION['id'])) { ?>
+            <div class="dropdown div_drop_login">
+                <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" alt="Link para Login" title="Link para Login"><i class="fa-solid fa-users"></i> Login</a>
+                <ul class="dropdown-menu ul_drop_login">
                     <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_login"><i class="fa-solid fa-user"></i> Login</a></li>
                     <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_cadastrar"><i class="fa-solid fa-user-plus"></i> Cadastrar</a></li>
                     <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_recuperarSenha"><i class="fa-solid fa-user-lock"></i> Recuperar Senha</a></li>
                 </ul>
             </div>
-            <!-- SE USUARIO ESTIVER LOGADO como usuário comum --------->
+<!--------------------SE USUARIO ESTIVER LOGADO como usuário comum ----------------------------->
             <?php } else {
             if($_SESSION['adm']==0) {
             $consulta_user=$conecta->query("SELECT nome, apelido FROM usuario WHERE id_usuario='$_SESSION[id]'");
             $exibe_user=$consulta_user->fetch(PDO::FETCH_ASSOC); ?>
-            <div class="div_dropd dropdown">
+            <div class="dropdown div_drop_login">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"><?php echo $exibe_user['apelido'];?></a>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu ul_drop_login">
                     <li><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
                 </ul>
             </div>
-            <!-- SE ESTIVER LOGADO COMO ADMINISTRADOR-->
+<!-------------------------- SE ESTIVER LOGADO COMO ADMINISTRADOR --------------------------->
             <?php } else { ?>
-            <div class="div_dropd dropdown">
+            <div class="div_drop_login dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">Nino JP</a>
-                <ul class="dropdown-menu dropdown-menu-dark fundo_black_80 fonte_small" aria-labelledby="dropdownMenuButton2">
+                <ul class="dropdown-menu ul_drop_login">
                     <li><a class="dropdown-item nav-link" href="animacao/anime_inserir_form.php" target="_blank"><i class="fa-solid fa-photo-film"></i> Inserir Anime</a></li>
                     <li><a class="dropdown-item nav-link" href="animacao/anime_listar.php" target="_blank"><i class="fa-solid fa-file-signature"></i> Alterar Anime</a></li>
                     <li><a class="dropdown-item nav-link" href="adm.php" target="_blank"><i class="fa-solid fa-gear"></i> Area Administrativa</a></li>
@@ -47,20 +48,28 @@
             </div>
             <?php } } ?>
         </div>
-        <!-- UL=ul_menu com os links de MENU, para acessar as paginas secundarias  -->
-        <ul id="ul_menu">
-            <a class="link_btn" href="https://localhost/dtudo/bitcoin.php" target="_new" title="Pagina sobre Bitcoin"><li>Ganhar<span id="destaq">$</span></li></a>
-            <a class="link_btn" href="https://localhost/dtudo/t_i.php" target="_new" title="Informção sobre T.I"><li>T.I.</li></a>
-            <a class="link_btn" href="https://localhost/dtudo/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral"><li>Animes</li></a>
-            <a class="link_btn" href="https://localhost/dtudo/sobre.php" target="_new" title="Pagina sobre O Site e o Autor"><li>Sobre</li></a>
+<!--========== UL = ul_menu com os links de MENU, para acessar as paginas secundarias ===========-->
+        <ul class="ul_menu_nav">
+            <li class="li_menu_nav">
+                <div class="dropdown div_drop_menu">
+                <a class="link_btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">T. I.</a>
+                    <ul class="dropdown-menu ul_menu_nav">    
+                        <li><a class="dropdown-item"  href="https://localhost/dtudo/public/ti/t_i.php" target="_self" title="Pagina sobre Tecnologia da Informação">T.I.</a></li>
+                        <li><a class="dropdown-item" href="../public/ti/php/php.php" target="_self" title="Pagina com Informações sobre PHP">PHP</a></li>
+                        <li><a class="dropdown-item" href="">Hardware</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li_menu_nav"><a class="link_btn" href="https://localhost/dtudo/public/ganhar/bitcoin.php" target="_new" title="Como ganhar dinheiro com T.I.">Ganhar<span id="destaq">$</span></a></li>
+            <li class="li_menu_nav"><a class="link_btn" href="https://localhost/dtudo/public/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral">Animes</a></li>
+            <li class="li_menu_nav"><a class="link_btn" href="https://localhost/dtudo/public/sobre.php" target="_new" title="Pagina sobre O Site e o Autor">Sobre</a></li>
         </ul>
         <div id="div_btn">
             <i id="icon_menu" class="fa-solid fa-bars icon_menu"></i>
         </div>
     </div>
-    
 </nav>
-<!-- Inicio do bloco da janela MODAL para fazer LOGIN -->
+<!--====== Inicio do bloco da janela MODAL para fazer LOGIN ==================================== -->
 <div class="modal fade" id="Modal_login" tabindex="-1" aria-labelledby="Modal_loginLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
@@ -98,7 +107,7 @@
 		</div>
 	</div>
 </div>
-<!-- Modal para CADASTRAR NOVO usuário -->
+<!--======= Modal para CADASTRAR NOVO usuário ===================================================-->
 <div class="modal fade" id="Modal_cadastrar" aria-hidden="true" aria-labelledby="Modal_cadastrarLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -152,7 +161,7 @@
         </div>
     </div>
 </div>
-<!-- Modal para RECUPERAR A SENHA -->
+<!--============== Modal para RECUPERAR A SENHA =================================================-->
 <div class="modal fade" id="Modal_recuperarSenha" aria-hidden="true" aria-labelledby="Modal_recuperarSenhaLabel2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -190,8 +199,8 @@
         </div>
     </div>
 </div>
-<!-- Bliblioteca JavaScript do BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-<!-- meu JS para controle do menu amburguer, responsivo -->
+<!--====== Bliblioteca JavaScript do BOOTSTRAP - Local com o Bundle ===========================-->
+<script src="../public/js/bootstrap.bundle.min.js"></script>
+
+<!-- Meu JS para controle do menu amburguer, responsivo ========================================-->
 <script src="navbar/js/nav_barra.js"></script>
