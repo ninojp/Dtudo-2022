@@ -12,8 +12,8 @@
 </head>
 <body> 
 <!--- Inclusão do NAVBAR e do HEADER -------------------------------------------------------->
-    <?php include_once '../../public/navbar/navbarra.php';
-        // include '../header.php';?>
+    <?php include '../../public/navbar/navbarra.php';
+          include '../header.php';?>
 <!-- MAIN GRID ITEM ------------------------------------------------------------------------->
 <main id="main_ti">
     <div id="row_tit">

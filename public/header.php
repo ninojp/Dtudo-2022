@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="https://localhost/dtudo/public/css/header.css">
 <!-- HEADER ID=header - Cabeçalho da página-->
 <header id="header" class="container">
     <div class="row">
@@ -8,7 +8,7 @@
     </div>
     <div id="row_header" class="row">
         <div id="div_esq" class="col-xxl-4 col-xl-4">
-            <img id="img_logo_grand" src="imgs/Logo_Dtudo_2022-300p.png" alt="Logo Dtudo" title="Imagem do Logo Dtudo">
+            <img id="img_logo_grand" src="https://localhost/dtudo/public/imgs/Logo_Dtudo_2022-300p.png" alt="Logo Dtudo" title="Imagem do Logo Dtudo">
         </div>
         <div id="div_dir" class="col-xxl-8 col-xl-8">
             <p class="p_texto"> Dtudo é um site informativo sobre T.I.<br>

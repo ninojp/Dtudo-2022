@@ -1,18 +1,18 @@
 <!--------------- BOOTSTRAP CSS - Local agora --------------------------------------------------->
-<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://localhost/dtudo/public/css/bootstrap.min.css" rel="stylesheet">
 <!--------------- AWESOME-FONTs com a CDNjs ----------------------------------------------------->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 <!-------------- GOOGLE FONTs (Cinzel+Decorative, Cutive+Mono, Kalam, Ubuntu)-------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 <!-------------- Meu CSS local NAVBARRA.CSS ------------------------------------------------------>
-<link rel="stylesheet" type="text/css" href="../public/navbar/css/navbarra.css">
+<link rel="stylesheet" type="text/css" href="https://localhost/dtudo/public/navbar/css/navbarra.css">
 <!--============================================================================================-->
 <nav id="nav_barra">
     <div id="div_container">
         <div id="div_logo_uls">
             <div id="div_img_login">
-                <a href="../index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="../navbar/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
+                <a href="https://localhost/dtudo/public/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="https://localhost/dtudo/public/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
             </div>
 <!--------------- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------------------------------->
             <?php if (empty($_SESSION['id'])) { ?>
@@ -40,8 +40,8 @@
             <div class="div_drop_login dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">Nino JP</a>
                 <ul class="dropdown-menu ul_drop_login">
-                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="animacao/anime_inserir_form.php" target="_blank"><i class="fa-solid fa-photo-film"></i> Inserir Anime</a></li>
-                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="animacao/anime_listar.php" target="_blank"><i class="fa-solid fa-file-signature"></i> Alterar Anime</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="https://localhost/dtudo/public/animacao/anime_inserir_form.php" target="_blank"><i class="fa-solid fa-photo-film"></i> Inserir Anime</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="https://localhost/dtudo/public/animacao/anime_listar.php" target="_blank"><i class="fa-solid fa-file-signature"></i> Alterar Anime</a></li>
                     <li class="li_drop_login"><a class="dropdown-item nav-link" href="adm.php" target="_blank"><i class="fa-solid fa-gear"></i> Area Administrativa</a></li>
                     <li class="li_drop_login"><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
                 </ul>
@@ -55,7 +55,7 @@
                 <a class="link_btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">T. I.</a>
                     <ul class="dropdown-menu ul_drop_menu">    
                         <li><a class="dropdown-item a_drop_menu"  href="https://localhost/dtudo/public/ti/t_i.php" target="_self" title="Pagina sobre Tecnologia da Informação">T.I.</a></li>
-                        <li><a class="dropdown-item a_drop_menu" href="../public/ti/php/php.php" target="_self" title="Pagina com Informações sobre PHP">PHP</a></li>
+                        <li><a class="dropdown-item a_drop_menu" href="https://localhost/dtudo/public/ti/php/php.php" target="_self" title="Pagina com Informações sobre PHP">PHP</a></li>
                         <li><a class="dropdown-item a_drop_menu" href="">Hardware</a></li>
                     </ul>
                 </div>
@@ -200,7 +200,7 @@
     </div>
 </div>
 <!--====== Bliblioteca JavaScript do BOOTSTRAP - Local com o Bundle ===========================-->
-<script src="../public/js/bootstrap.bundle.min.js"></script>
+<script src="https://localhost/dtudo/public/js/bootstrap.bundle.min.js"></script>
 
 <!-- Meu JS para controle do menu amburguer, responsivo ========================================-->
-<script src="navbar/js/nav_barra.js"></script>
+<script src="https://localhost/dtudo/public/navbar/js/nav_barra.js"></script>
