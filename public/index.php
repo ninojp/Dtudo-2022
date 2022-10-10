@@ -1,6 +1,6 @@
 <?php session_start();
 ob_start();
-include_once('conecta.php');?>
+include_once "./conecta.php";?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,14 +12,14 @@ include_once('conecta.php');?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dtudo 2022</title>
 <!----- StyleGeral.css - CSS local e geral para todas as paginas ---------------------------------->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://localhost/dtudo/public/css/index.css">
 <!----- Meu favicon atual ------------------------------------------------------------------------->
-    <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
+    <link rel="icon" sizes="128x128" href="https://localhost/dtudo/public/imgs/favicon.ico">
 </head>
 <body>
 <!----- navbarra.php - Pagina externa ------------------------------------------------------------->
-    <?php include './navbar/navbarra.php';
-        include 'header.php';?>
+    <?php include './navbarra.php';
+        include './header.php';?>
 <!----- GRID ITEM e também um GRID CONTEINER ------------------------------------------------------>
     <main id="main_princ">
         <div class="divs_link" id="div_ti">
@@ -30,13 +30,13 @@ include_once('conecta.php');?>
         </div>
         <div class="divs_link" id="div_ganhar">
             <h2 class="h2_titulo">Como ganhar dinheiro com T.I.</h2>
-            <a href="https://localhost/dtudo/public/ganhar/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
+            <a href="http://localhost/dtudo/public/ganhar/bitcoin.php" target="_new" title="Pagina sobre Bitcoin">
                 <img id="img_money" class="imgs_link" src="imgs/SlaveMoney.png" alt="Escravo do Dinheiro" title="Informação Sobre como ganhar dinheiro"></a>
             <p class="p_texto">Sem promessas milagrosas sem papo furado. Estudando e trabalhando com T.I. na prática. Com investimentos de baixo risco para quem pode, com estudo para quem se dedica e com esforço para quem já sabe.</p>
         </div>
         <div class="divs_link" id="div_lazer">
             <h2 class="h2_titulo">Lazer, pois a escolha é a chave, e o equilíbrio é caminho para o sucesso!</h2>
-            <a href="https://localhost/dtudo/public/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral">
+            <a href="http://localhost/dtudo/public/animacao/animacao.php" target="_new" title="Pagina sobre Animes em Geral">
                 <img id="img_anime" class="imgs_link" src="imgs/animes_personagem_400px.png" id="img_animes" alt="Animes" title="Todos os Animes que já assisti"></a>
             <p class="p_texto">Estar motivado vai fazer você prosseguir e não desistir no meio do caminho, o que acontece com a maioria nesta área de T.I., então tenha foco saiba escolher o que mais lê interessa nesta imensa área. Aí entra o lazer, junte algo que você gosta com algo que lê traga retorno$</p>
         </div>

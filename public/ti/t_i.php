@@ -1,19 +1,19 @@
 <?php session_start();
-    include '../conecta.php';?>
+    include_once '../conecta.php';?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!------ Meu CSS Local da Pagina ------------------------------------------------------------>
-    <link rel="stylesheet" type="text/css" href="../ti/css/t_i.css">
-    <link rel="icon" sizes="128x128" href="../imgs/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://localhost/dtudo/public/ti/css/t_i.css">
+    <link rel="icon" sizes="128x128" href="https://localhost/dtudo/public/imgs/favicon.ico">
     <title>Dtudo - Tecnologia da Informação</title>
 </head>
 <body> 
 <!--- Inclusão do NAVBAR e do HEADER -------------------------------------------------------->
-    <?php include '../../public/navbar/navbarra.php';
-          include '../header.php';?>
+    <?php include_once '../navbarra.php';
+          include_once '../header.php';?>
 <!-- MAIN GRID ITEM ------------------------------------------------------------------------->
 <main id="main_ti">
     <div id="row_tit">
@@ -46,6 +46,6 @@
         </section>
     </div>
 </main>
-    <?php include('rodape.php'); ?>
+    <?php include('../rodape.php'); ?>
 </body>
 </html>

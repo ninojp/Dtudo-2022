@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 <!-------------- Meu CSS local NAVBARRA.CSS ------------------------------------------------------>
-<link rel="stylesheet" type="text/css" href="https://localhost/dtudo/public/navbar/css/navbarra.css">
+<link rel="stylesheet" type="text/css" href="https://localhost/dtudo/public/css/navbarra.css">
 <!--============================================================================================-->
 <nav id="nav_barra">
     <div id="div_container">
@@ -48,7 +48,7 @@
             </div>
             <?php } } ?>
         </div>
-<!--========== UL = ul_menu com os links de MENU, para acessar as paginas secundarias ===========-->
+<!--===== MENU UL = ul_menu com os links de MENU, para acessar as paginas secundarias ===========-->
         <ul class="ul_menu_nav">
             <li class="li_menu_nav">
                 <div class="dropdown ">
