@@ -1,18 +1,20 @@
 <?php session_start();
-    include 'conecta.php';?>
+    include '../conecta.php';?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="css/t_i.css">
-    <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
+<!------ Meu CSS Local da Pagina ------------------------------------------------------------>
+    <link rel="stylesheet" type="text/css" href="../ti/css/t_i.css">
+    <link rel="icon" sizes="128x128" href="../imgs/favicon.ico">
     <title>Dtudo - Tecnologia da Informação</title>
 </head>
-<body> <!--GRID CONTEINER -->
-    <?php include 'navbar/navbarra.php';
-        include 'header.php';?>
-<!--GRID ITEM -->
+<body> 
+<!--- Inclusão do NAVBAR e do HEADER -------------------------------------------------------->
+    <?php include_once '../../public/navbar/navbarra.php';
+        // include '../header.php';?>
+<!-- MAIN GRID ITEM ------------------------------------------------------------------------->
 <main id="main_ti">
     <div id="row_tit">
         <h1>Dicas, Cursos, apostilas, e-books e muita Informação sobre Tecnologia da informação!</h1>

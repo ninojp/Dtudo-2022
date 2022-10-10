@@ -11,7 +11,7 @@ font-family: 'Ubuntu', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
-/* Variáveis GLOBAIs das CORES da Pagina */
+/* Variáveis GLOBAIs das CORES da Pagina ******************************************************/
 :root{
     --gelo: rgba(235,238,246,1);
     --gelo2: rgba(246,247,249,1);
@@ -39,7 +39,7 @@ body{
     background-color: var(--preto) !important;
     color: var(--azulClaro);
 }
-/* Tag NAV com o ID=nav_barra tag principal q engloba todo o conteudo */
+/* Tag NAV com o ID=nav_barra tag principal q engloba todo o conteudo *************************/
 #nav_barra{
     position: fixed;
     width: 100%;
@@ -53,7 +53,7 @@ body{
     color: var(--azulClaro);
     /* border: #ffd700 dotted 1px; */
 }
-/* Definições gerais das tags -ul, ol, li, a */
+/* Definições gerais das tags -ul, ol, li, a *************************************************/
 #nav_barra ul, ol, li, a{
     align-items: center;
     text-decoration: none;
@@ -61,12 +61,12 @@ body{
     color: var(--azulClaro);
     margin: 0px;
 }
-/* Defini dos LINKs das UL, login e menu */
+/* Defini dos LINKs das UL, login e menu *****************************************************/
 #nav_barra ul a :active{
     color: var(--gold);
 }
 
-/* DIV com ID=div_container q envelopa - id=div_logo_uls - id=ul_menu - id=div_btn */
+/* DIV com ID=div_container q envelopa - id=div_logo_uls - id=ul_menu - id=div_btn ***********/
 #div_container{
     display: flex;
     align-items: center;
@@ -77,27 +77,37 @@ body{
     /* border: #fff dotted 1px; */
 }
 
-/* DIV ID=div_logo_uls da IMAGEM IMG=Logo e da DIV=dropdown e LISTA do Login */
+/* DIV ID=div_logo_uls da IMAGEM IMG=Logo e da DIV=dropdown e LISTA do Login *****************/
 #div_logo_uls{
     display: flex;
     position: relative;
 }
-/* DIV ID=div_img_login da imagem do logo pequeno */
+/* DIV ID=div_img_login da imagem do logo pequeno *********************************************/
 #div_img_login{
     margin-right: 1em;
 }
 
-/* DIV class="dropdown div_drop_login" do MENU DROPDOWN do login */
+/* DIV - UL - LI - MENU DROPDOWN do login - Logado - Logout ***********************************/
 .div_drop_login{
     position: absolute;
     left: 90px;
     bottom: -2px;
-    background-color: var(--transp);
+    background-color: var(--azulScuro);
 }
-.div_drop_login ul, li{
-    background-color: var(--preto80);
+.ul_drop_login{
+    background-color: var(--azulScuro);
 }
-/* UL do MENU principal do navbar dentro da div_container */
+.li_drop_login{
+    font-size: 0.9em;
+}
+/* DIV - UL - LI - MENU principal do navbar dentro da div_container *****************************/
+.div_drop_menu{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-right: 2em;
+    background-color: var(--azulscuro);
+}
 .ul_menu_nav{
     display: flex;
     align-items: center;
@@ -108,19 +118,15 @@ body{
     background-color: var(--azulScuro);
     font-size: 1.5em;
 }
-.div_drop_menu{
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    margin-right: 2em;
-    background-color: var(--azulscuro);
+.ul_drop_menu{
+    background-color: var(--azulScuro);
+    color: var(--azulClaro);
 }
-.div_drop_menu ul, li{
-
-    font-size: .5em;
-    background-color: var(--azulscuro);
+.a_drop_menu{
+    background-color: var(--azulScuro);
+    color: var(--azulClaro);
 }
-/* Botão UMBURGUER q vai aparecer somente quando a tela for menor que: 590px */
+/* Botão UMBURGUER q vai aparecer somente quando a tela for menor que: 590px *******************/
 #div_btn{
     display: none;
     font-size: 2rem;

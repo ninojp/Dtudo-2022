@@ -1,28 +1,27 @@
 <?php session_start();
 ob_start();
-include_once('conecta.php');
-?>
+include_once('conecta.php');?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--temporariamente para limpar o cache no HTTP 1.0 -->
+<!----- temporariamente para limpar o cache no HTTP 1.0 ------------------------------------------->
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dtudo 2022</title>
-    <!-- StyleGeral.css - CSS local e geral para todas as paginas -->
+<!----- StyleGeral.css - CSS local e geral para todas as paginas ---------------------------------->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <!-- Meu favicon atual -->
+<!----- Meu favicon atual ------------------------------------------------------------------------->
     <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
 </head>
 <body>
-    <!-- navbarra.php - Pagina externa -->
-    <?php include_once('navbar/navbarra.php');
-        include_once('header.php');?>
+<!----- navbarra.php - Pagina externa ------------------------------------------------------------->
+    <?php include './navbar/navbarra.php';
+        include 'header.php';?>
+<!----- GRID ITEM e também um GRID CONTEINER ------------------------------------------------------>
     <main id="main_princ">
-        <!--GRID ITEM e também um GRID CONTEINER-->
         <div class="divs_link" id="div_ti">
             <h2 class="h2_titulo">Estudando e Praticando T.I.</h2>
             <a href="https://localhost/dtudo/public/ti/t_i.php" target="_new" title="Pagina sobre Tecnologia da Informação">
@@ -42,7 +41,7 @@ include_once('conecta.php');
             <p class="p_texto">Estar motivado vai fazer você prosseguir e não desistir no meio do caminho, o que acontece com a maioria nesta área de T.I., então tenha foco saiba escolher o que mais lê interessa nesta imensa área. Aí entra o lazer, junte algo que você gosta com algo que lê traga retorno$</p>
         </div>
     </main>
-    <?php include('rodape.php'); ?>
+<!----- Inclusão do rodapé da pagina ----------------------------------------------------------->
+    <?php include_once ('rodape.php'); ?>
 </body>
-
 </html>

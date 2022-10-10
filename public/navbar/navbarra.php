@@ -6,22 +6,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&family=Kalam:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 <!-------------- Meu CSS local NAVBARRA.CSS ------------------------------------------------------>
-<link rel="stylesheet" type="text/css" href="navbar/css/navbarra.css">
+<link rel="stylesheet" type="text/css" href="../public/navbar/css/navbarra.css">
 <!--============================================================================================-->
 <nav id="nav_barra">
     <div id="div_container">
         <div id="div_logo_uls">
             <div id="div_img_login">
-                <a href="https://localhost/dtudo/public/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="navbar/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
+                <a href="../index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="../navbar/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
             </div>
 <!--------------- Bloco PHP + HTML para o fazer a o LOGIN.PHP ------------------------------------->
             <?php if (empty($_SESSION['id'])) { ?>
             <div class="dropdown div_drop_login">
                 <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" alt="Link para Login" title="Link para Login"><i class="fa-solid fa-users"></i> Login</a>
                 <ul class="dropdown-menu ul_drop_login">
-                    <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_login"><i class="fa-solid fa-user"></i> Login</a></li>
-                    <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_cadastrar"><i class="fa-solid fa-user-plus"></i> Cadastrar</a></li>
-                    <li><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_recuperarSenha"><i class="fa-solid fa-user-lock"></i> Recuperar Senha</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_login"><i class="fa-solid fa-user"></i> Login</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_cadastrar"><i class="fa-solid fa-user-plus"></i> Cadastrar</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="" data-bs-toggle="modal" data-bs-target="#Modal_recuperarSenha"><i class="fa-solid fa-user-lock"></i> Recuperar Senha</a></li>
                 </ul>
             </div>
 <!--------------------SE USUARIO ESTIVER LOGADO como usuário comum ----------------------------->
@@ -32,7 +32,7 @@
             <div class="dropdown div_drop_login">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"><?php echo $exibe_user['apelido'];?></a>
                 <ul class="dropdown-menu ul_drop_login">
-                    <li><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
                 </ul>
             </div>
 <!-------------------------- SE ESTIVER LOGADO COMO ADMINISTRADOR --------------------------->
@@ -40,10 +40,10 @@
             <div class="div_drop_login dropdown">
                 <a class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown">Nino JP</a>
                 <ul class="dropdown-menu ul_drop_login">
-                    <li><a class="dropdown-item nav-link" href="animacao/anime_inserir_form.php" target="_blank"><i class="fa-solid fa-photo-film"></i> Inserir Anime</a></li>
-                    <li><a class="dropdown-item nav-link" href="animacao/anime_listar.php" target="_blank"><i class="fa-solid fa-file-signature"></i> Alterar Anime</a></li>
-                    <li><a class="dropdown-item nav-link" href="adm.php" target="_blank"><i class="fa-solid fa-gear"></i> Area Administrativa</a></li>
-                    <li><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="animacao/anime_inserir_form.php" target="_blank"><i class="fa-solid fa-photo-film"></i> Inserir Anime</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="animacao/anime_listar.php" target="_blank"><i class="fa-solid fa-file-signature"></i> Alterar Anime</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="adm.php" target="_blank"><i class="fa-solid fa-gear"></i> Area Administrativa</a></li>
+                    <li class="li_drop_login"><a class="dropdown-item nav-link" href="sair.php"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Logout</a></li>
                 </ul>
             </div>
             <?php } } ?>
@@ -51,12 +51,12 @@
 <!--========== UL = ul_menu com os links de MENU, para acessar as paginas secundarias ===========-->
         <ul class="ul_menu_nav">
             <li class="li_menu_nav">
-                <div class="dropdown div_drop_menu">
+                <div class="dropdown ">
                 <a class="link_btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">T. I.</a>
-                    <ul class="dropdown-menu ul_menu_nav">    
-                        <li><a class="dropdown-item"  href="https://localhost/dtudo/public/ti/t_i.php" target="_self" title="Pagina sobre Tecnologia da Informação">T.I.</a></li>
-                        <li><a class="dropdown-item" href="../public/ti/php/php.php" target="_self" title="Pagina com Informações sobre PHP">PHP</a></li>
-                        <li><a class="dropdown-item" href="">Hardware</a></li>
+                    <ul class="dropdown-menu ul_drop_menu">    
+                        <li><a class="dropdown-item a_drop_menu"  href="https://localhost/dtudo/public/ti/t_i.php" target="_self" title="Pagina sobre Tecnologia da Informação">T.I.</a></li>
+                        <li><a class="dropdown-item a_drop_menu" href="../public/ti/php/php.php" target="_self" title="Pagina com Informações sobre PHP">PHP</a></li>
+                        <li><a class="dropdown-item a_drop_menu" href="">Hardware</a></li>
                     </ul>
                 </div>
             </li>
