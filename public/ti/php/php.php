@@ -9,9 +9,8 @@
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
 </head>
 <body>
-    <?php require_once "nav_top.php";
-    // include_once "header.php";?>
-    <h2 class="m-3 text-center"><a href="index.php?a=inicio" target="_self">Aprendendo</a> - <a href="index.php?a=praticando" target="_blank">Praticando</a> - <a href="index.php?a=funcoes" target="_blank">Funções do PHP</a> - <a href="index.php?a=banco_dados" target="_new">Banco de Dados</a> - <a href="index.php?a=php_oop" target="_new">PHP OOP</a></h2>
+    <?php require_once "nav_php_top.php"; ?>
+    <h2 class="m-3 text-center"><a href="php.php?a=inicio" target="_self">Aprendendo</a> - <a href="php.php?a=praticando" target="_blank">Praticando</a> - <a href="php.php?a=funcoes" target="_blank">Funções do PHP</a> - <a href="php.php?a=banco_dados" target="_new">Banco de Dados</a> - <a href="php.php?a=php_oop" target="_new">PHP OOP</a></h2>
 <!--=======================================================================================================================-->
     <main class="main_cont container-fluid">
     <!-- testando um método que aprendi no curso do João Ribeiro, PHP 2017 -->

@@ -1,4 +1,4 @@
-<?php include_once 'nav_top.php';?>
+<?php include_once 'nav_php_top.php';?>
 <?php 
     # Recebendo os dados do FORMULÁRIO via _POST
     if (isset($_POST['input_words'])) {$v_string=$_POST['input_words'];} 

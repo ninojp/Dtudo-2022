@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações Sobre o Site e o Autor</title>
-    <link rel="icon" sizes="128x128" href="imgs/favicon.ico">
+    <link rel="icon" sizes="128x128" href="https://localhost/dtudo/public/imgs/favicon.ico">
 </head>
 <body>
-    <?php include_once('navbar/navbarra.php');
-        include_once('header.php');?>
+    <?php include_once('./navbarra.php');
+        include_once('./header.php');?>
     <h1>Informações Sobre o Site e o Autor</h1><br><hr>
     <div class="container">
         <div class="row">
@@ -25,7 +25,7 @@
             </p>
         </div>
     </div>
-<?php include_once('rodape.php');?>
+<?php include_once('./rodape.php');?>
 </body>
 </html>
 <div></div>

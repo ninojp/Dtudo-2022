@@ -23,12 +23,15 @@ $minuto = date("i");
 $segundo = date("s");
 ?>
 <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/php.css">
 </head>
 <nav class="container-fluid nav_top">
     <div class="row nav_row">
         <div class="text_cookie"><?php if (isset($_COOKIE['teste_index'])){echo"Cookie de Teste: ".$_COOKIE['teste_index'];}?></div>
+        <div id="div_img_login">
+                <a href="https://localhost/dtudo/public/index.php" target="_new" title="Index ATUAL"><img id="img_logo_peq" src="https://localhost/dtudo/public/imgs/Logo-Dtudo_30px.png" alt="Logo Dtudo" title="Logo Dtudo Pequeno"></a>
+        </div>
         <div class="text_menu"><ul class="ul_menu"><li class="li_menu"><a class="a_menu" href="https://www.php.net/manual/pt_BR/index.php" target="_blank">Manual do PHP</a></li>
             <div class="dropdown">
                 <a id="dropdown_joao" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button" href="https://www.youtube.com/c/JLDRPT/playlists" target="_blank">João Ribeiro</a>
@@ -50,4 +53,4 @@ $segundo = date("s");
         </div>
     </div>
 </nav>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../../js/bootstrap.bundle.min.js"></script>

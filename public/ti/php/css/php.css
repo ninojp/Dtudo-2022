@@ -1,9 +1,37 @@
 @charset "UTF-8";
 /* Aqui vai ser meu arquivo CSS para testes de PHP, criado 20/09/2022 */
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+/* Variáveis GLOBAIs das CORES da Pagina ******************************************************/
+:root{
+    --gelo: rgba(235,238,246,1);
+    --gelo2: rgba(246,247,249,1);
+    --branco: #fff;
+    --transp: transparent;
+    --dark: rgba(55,54,54,1);
+    --preto: #000;
+    --preto20: rgba(0,0,0,0.2);
+    --preto40: rgba(0,0,0,0.4);
+    --preto60: rgba(0,0,0,0.6);
+    --preto80: rgba(0,0,0,0.8);
+    --azulClaro: rgba(13,110,253,1);
+    --azulMedio: rgba(4,9,170,1);
+    --azulEscuro: rgba(5,35,57,1);
+    --azulScuro: rgba(1,13,21,1);
+    --gold: rgba(255,215,0,1);
+    --laranja: rgba(240,191,76,1);
+    --vermelho: rgba(172,2,2,1);
+    --verdeScuro: rgba(6,16,0,1);
+    --verdeEscuro: rgba(16,44,0,1);
+    --verdeClaro: rgba(27,74,0,1);
 }
 body{
     background-color: rgb(26, 26, 26);
@@ -11,13 +39,13 @@ body{
     font-size: 1.1em;
 }
 h1,h2{
-    color: rgb(256, 0, 0);
+    color: var(--gold);
     background-color: black;
     font-weight: 600;
 }
 h3,h4{
     width: fit-content;
-    color: rgb(74, 65, 234);
+    color: rgba(13,110,253,1);
     background-color: black;
     padding: 0 10px 0 10px;
 }
@@ -52,10 +80,16 @@ span.codigo{
     color: #fff;
     /* border: 1px dotted rgb(111, 248, 48); */
 }
+#div_img_login{
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
 .text_menu{
     display: flex;
     width: fit-content;
-    color: rgb(53, 47, 238);
+    color: rgba(13,110,253,1);
     /* border: 1px dotted rgb(111, 248, 48); */
 }
 .ul_menu{
@@ -120,12 +154,6 @@ main.main_cont{
 }
 .sec_princ h1{
     text-align: center;
-}
-.aside_col{
-    display: block;
-    background-color: rgb(29, 4, 101);
-    color: rgb(53, 93, 167);
-    /* border: 1px solid rgb(112, 164, 236); */
 }
 footer.foot_cont{
     display: flex;

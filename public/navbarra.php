@@ -55,7 +55,7 @@
                 <a class="link_btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">T. I.</a>
                     <ul class="dropdown-menu ul_drop_menu">    
                         <li><a class="dropdown-item a_drop_menu"  href="https://localhost/dtudo/public/ti/t_i.php" target="_self" title="Pagina sobre Tecnologia da Informação">T.I.</a></li>
-                        <li><a class="dropdown-item a_drop_menu" href="https://localhost/dtudo/public/ti/php/php.php" target="_self" title="Pagina com Informações sobre PHP">PHP</a></li>
+                        <li><a class="dropdown-item a_drop_menu" href="https://localhost/dtudo/public/ti/php/php.php" target="_blank" title="Pagina com Informações sobre PHP">PHP</a></li>
                         <li><a class="dropdown-item a_drop_menu" href="">Hardware</a></li>
                     </ul>
                 </div>
