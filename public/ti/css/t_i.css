@@ -1,31 +1,27 @@
 @charset "UTF-8";
 /* Resolvi criar 01/09/22 um CSS especifico para a pagina T_I.php */
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Variáveis GLOBAIs das CORES da Pagina */
-:root{
-    --branco: #fff;
-    --transp: transparent;
-    --dark: #373636;
-    --preto: #000;
-    --preto20: rgba(0,0,0,0.2);
-    --preto40: rgba(0,0,0,0.4);
-    --preto60: rgba(0,0,0,0.6);
-    --preto80: rgba(0,0,0,0.8);
-    --azulClaro: rgba(13, 110, 253,1);
-    --azulMedio: rgba(4, 8, 115,1);
-    --azulScuro: rgba(8, 4, 19,1);
-    --gold: #ffd700;
-}
+
 body {
     display: block;
     /* color: var(--font-color); */
     background-color: var(--preto) !important;
 }
-#main_ti{
+.h1_frase{
+    color: var(--branco);
+    font-family: 'Cutive Mono', monospace;
+}
+/* MAIN conteiner-fluid da pagina com o ID=main_conteiner ***************************************/
+#main_conteiner{
     display: block;
     /* width: 100vw;
     height: 100vh; */
@@ -36,23 +32,31 @@ body {
     text-align: center;
     font-family: 'Cutive Mono', monospace;
 }
-#row_tit{
+/* SECTION - primeiro ROW pagina com o H1 e o primeiro texto descritivo ************************/
+#sec_tit_row{
     display: block;
     justify-content: center;
     padding: 2rem 0px;
 }
-#row_tit p{
+/* DIV com o H1 do titulo da pagina*/
+.div_tit_h1ti{
+    font-weight: 500;
+}
+/* DIV com o Primeiro Paragrafo descritivo da pagina  *******************************************/
+.div_parag1_desc1{
     padding: 1rem 3rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--gold);
     text-align: left;
 }
-#row_main{
+/* SECTION class="row" com os dois DIVs Hard e Soft  ********************************************/
+#sec_hard_soft{
     display: flex;
     /* flex-wrap: wrap; */
 }
-#sect_left{
+/* DIV com o H2 HARDWARE e o Acordion do texto sobre Hardware **********************************/
+.div_hard{
     display: inline-block;
     width: calc(50% - 20px);
     background-color: var(--preto);
@@ -60,11 +64,16 @@ body {
     padding: 3rem 2rem;
     /* border: #fff solid 2px; */
 }
-#sect_right{
+/* DIV com o H2 SOFTWARE e o Acordion do texto sobre Software ************************************/
+.div_soft{
     display: inline-block;
     width: calc(50% - 20px);
     background-color: var(--branco);
     color: var(--preto);
     padding: 3rem 2rem;
     border: rgb(0, 0, 0) solid 2px;
+}
+/* DIV com o SEGUNDO Paragrafo descritivo da pagina  *******************************************/
+.div_parag2_desc2{
+    display: block;
 }
