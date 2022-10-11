@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>np
         </div>
         <div class="col div_soft">
             <h2>Software</h2><hr>

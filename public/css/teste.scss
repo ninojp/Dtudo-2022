@@ -1,0 +1,40 @@
+@charset "UTF-8";
+//Estou testando pela primeira vez o SASS, com este arquivo de teste
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
+
+$font_ubunto: 'Ubuntu', sans-serif;
+$font_monos: 'Cutive Mono', monospace;
+
+$color_ouro: rgba(255,215,0,1);
+$color_azulLegal: rgba(13,110,253,1);
+
+$pad_lateral: 20px 100px;
+
+$borda_verd: 1px dotted rgba(0,255,0,1);
+
+.div1_teste{
+    display: block;
+    background-color: $color_azulLegal;
+    color: #000;
+    font-family: $font_ubunto;
+    padding: $pad_lateral;
+}
+.div2_teste2{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    font-family: $font_monos;
+    padding: $pad_lateral;
+}
+// Agora estou testando com o modo automatico, com o resultado no arquivo auto_teste.css
+.div3_outro{
+    display: contents;
+    background-color: #000;
+    color: $color_ouro;
+    font-size: 1rem;
+    font-family: $font_monos;
+}

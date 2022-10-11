@@ -1,0 +1,30 @@
+/* Google Fontes escolhidas
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Ubuntu', sans-serif; */
+.div1_teste {
+  display: block;
+  background-color: rgb(13, 110, 253);
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+  padding: 20px 100px;
+}
+
+.div2_teste2 {
+  display: flex;
+  background-color: black;
+  color: #fff;
+  font-family: "Cutive Mono", monospace;
+  padding: 20px 100px;
+}
+
+.div3_outro {
+  display: contents;
+  background-color: #000;
+  color: rgb(255, 215, 0);
+  font-size: 1rem;
+  font-family: "Cutive Mono", monospace;
+}
+
+/*# sourceMappingURL=auto_teste.css.map */
