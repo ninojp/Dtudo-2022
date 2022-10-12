@@ -6,6 +6,9 @@ font-family: 'Cutive Mono', monospace;
 font-family: 'Kalam', cursive;
 font-family: 'Ubuntu', sans-serif; */
 
+// DEPOIS DE INSTALADO O SASS (eu instalei via NPM do NODEJS), SÓ FUNCIONOU NO cmd O powershell INSTALA MAS DEPOIS DE UM TEMPO NÃO CONSIGO USAR (sass --version)...
+// É BEM SIMPLES DE USAR, BASTA DIGITAR NO CMD  ->  sass aquivoOriginal.scss arquivoSaida.css
+
 $font_ubunto: 'Ubuntu', sans-serif;
 $font_monos: 'Cutive Mono', monospace;
 
@@ -37,4 +40,40 @@ $borda_verd: 1px dotted rgba(0,255,0,1);
     color: $color_ouro;
     font-size: 1rem;
     font-family: $font_monos;
+}
+// fechei e abri novamente o visual studio cold para testar se fica fincionado o AUTO conversaõ do SCSS
+.div_de_teste{
+    display: flex;
+    background-color: #000;
+    color: #fff;
+}
+//O watching só fica funcionando até eu fechar o VS, quando eu abri agora e salvei não veio ativo automaticamente!
+
+//agora testei com só com -W e o mesmo nome do arquivo  de saida! deu ERRO e não salvou
+//Eu estava na PASTA ERRADA KKKKKKKKKKKKKKKKKKKKKKKK
+//testando novamente..... O SCSS não salva os comentários, mas deu certo e SOBREESCREVEU o arquivo de saida auto_teste.css
+
+#span{
+    background-color: #000;
+    color: #fff;
+    font-family: $font_ubunto;
+    border: $borda_verd;
+}
+//Agora vou testar para SALVAR em outro diretório
+.nadaDeclarar{
+    display: block;
+    background-color: #000;
+    color: $color_ouro;
+    border: $borda_verd;
+}
+//agora sim deu certo... salver em outro diretorio. SÓ PRA VARIAR ESTAVA DIGITANDO O CAMINHO ERRADO
+.semMudancas{
+    display: block;
+
+}
+// mais testes com SCSS com o auto salvamento... -w, salvando na mesma pasta
+//No VS tudo funcionando... 
+//sass --watch teste.scss c:\xampp\htdocs\dtudo\public\animacao\css\teste_outroDir.css
+.sotestemesmo{
+    display: block;
 }
