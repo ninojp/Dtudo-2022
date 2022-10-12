@@ -55,4 +55,10 @@ font-family: 'Ubuntu', sans-serif; */
   display: block;
 }
 
+.aquivo {
+  display: flex;
+  background-color: black;
+  color: #fff;
+}
+
 /*# sourceMappingURL=teste.css.map */

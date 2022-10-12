@@ -77,3 +77,12 @@ $borda_verd: 1px dotted rgba(0,255,0,1);
 .sotestemesmo{
     display: block;
 }
+//novo arquivo... testando o savamento automatico, em pastas (quando a mesma é alterada)
+.aquivo{
+    display: flex;
+    background-color: black;
+    color: #fff;
+}
+//realmente salva quando se altera o conteúdo da PASTA
+//mas tem q colocar o endereço completo 
+// (sass --watch C:\xampp\htdocs\dtudo\public\css:C:\xampp\htdocs\dtudo\public\css)
