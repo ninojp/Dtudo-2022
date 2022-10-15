@@ -228,29 +228,31 @@
                 <tr><td>.</td><td>Concatenação</td><td>$txt1 . $txt2</td><td>Junta uma string a outra ou a uma $variável</td></tr>
                 <tr><td>.=</td><td>atribuição de concatenaçã</td><td>$txt1 .= $txt2</td><td>acrescenta o argumento do lado direito no argumento do lado esquerdo.</td></tr>
             </tbody>
-        </table>
+        </table><br>
         <h4 class="w-100 text-center">Operadores de atribuição condicional PHP</h4>
         <table class="table table-dark table-striped table-hover"><thead><tr>
             <th>Operador</th><th>Nome</th><th>Exemplo</th><th>Resultado</th>
         </tr></thead>
             <tbody>
                 <tr><td>?:</td><td>Ternário</td><td>$x = expr1 ? expr2 : expr3</td><td>Retorna o valor de $x.<br>O valor de  $x é expr2 se expr1 = TRUE.<br>O valor de $x é expr3 se expr1 = FALSE</td></tr>
-                <tr><td>??</td><td>Null coalescing<br>Aglutinação nula</td><td>$x = expr1 ?? expr2</td><td>Retorna o valor de $x.<br>O valor de $x é expr1 se expr1 existir, e é não NULL. Se expr1 não existe, ou é NULL, o valor de $x é expr2.</td></tr>
+                <tr><td>??</td><td>Null coalescing<br>Aglutinação nula</td><td>$x = expr1 ?? expr2</td><td>Retorna o valor de $x.<br>O valor de $x é expr1 se expr1 existir, e é não NULL. Se expr1 não existe, ou é NULL, o valor de $x é expr2.(parecido com o if e else)</td></tr>
             </tbody>
         </table>
         </div>
     </div>
     <div class="row">
         <div class="col">
+        <h4 class="w-100 text-center">Operadores bit a bit <a href="https://www.php.net/manual/pt_BR/language.operators.bitwise.php" targe="_blank">(bitwise)</a></h4>
         <table class="table table-dark table-striped table-hover"><thead><tr>
             <th>Exemplo</th><th>Nome</th><th>Resultado</th>
         </tr></thead>
             <tbody>
-                <tr><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td></tr>
-                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td>$a & $b</td><td>E (AND)</td><td>Os bits que estão ativos tanto em $a quanto em $b são ativados.</td></tr>
+                <tr><td>$a | $b</td><td>OU (OR inclusivo)</td><td>Os bits que estão ativos em $a ou em $b são ativados.</td></tr>
+                <tr><td>$a ^ $b</td><td>XOR (OR exclusivo)</td><td>Os bits que estão ativos em $a ou em $b, mas não em ambos, são ativados.</td></tr>
+                <tr><td>~ $a</td><td>NÃO (NOT)</td><td>Os bits que estão ativos em $a não são ativados, e vice-versa.</td></tr>
+                <tr><td>$a << $b</td><td>Deslocamento à esquerda</td><td>Desloca os bits de $a $b passos para a esquerda (cada passo significa "multiplica por dois")</td></tr>
+                <tr><td>$a >> $b</td><td>Deslocamento à direita</td><td>Desloca os bits de $a $b passos para a direita (cada passo significa "divide por dois")</td></tr>
             </tbody>
         </table>
         </div>
