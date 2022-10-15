@@ -138,7 +138,8 @@
     <h3 class="mt-1">Operadores: <a href="https://www.php.net/manual/pt_BR/language.operators.php" target="_blank">Manual PHP</a> ou <a href="https://www.w3schools.com/php/php_operators.asp" target="_blank">W3schools</a></h3>
     <div class="row">
         <div class="col">
-            <table class="table table-dark table-striped"><thead><tr>
+            <h4 class="w-100 text-center">Operadores aritméticos <abbr title="Hypertext Preprocessor /originalmente Personal Home Page">PHP</abbr></h4>
+            <table class="table table-dark table-striped table-hover"><thead><tr>
             <th>Operador</th><th>Nome</th><th>Exemplo</th><th>Resultado</th>
             </tr></thead>
             <tbody>
@@ -152,25 +153,122 @@
                 <tr><td>**</td><td>Exponencial</td><td>$a ** $b</td><td>Resultado de $a elevado a $b. Introduzido no PHP 5.6.</td></tr>
             </tbody>
             </table></div>
-        <div class="col"></div>
+        <div class="col">
+            <h4 class="w-100 text-center">Operadores de atribuição PHP</h4>
+            <table class="table table-dark table-striped table-hover"><thead><tr>
+                <th>Operador</th><th>Exemplo</th><th>Nome</th><th>Resultado</th>
+            </tr></thead>
+                <tbody>
+                    <tr><td>x = y</td><td>x = y</td><td>Atribuição</td><td>Isto quer dizer, que o operando da esquerda recebe o valor da expressão da direita</td></tr>
+                    <tr><td>x += y</td><td>x = x + y</td><td>Adição</td><td>A variável recebe ela mesma + o outro valor</td></tr>
+                    <tr><td>x -= y</td><td>	x = x - y</td><td>Subtração</td><td>A variável é subtraida pelo valor declarado</td></tr>
+                    <tr><td>x *= y</td><td>x = x * y</td><td>Multiplicação</td><td>A variável é multicada pelo valor declarado</td></tr>
+                    <tr><td>x /= y</td><td>x = x / y</td><td>Divisão</td><td>A variável é dividida pelo valor declarado</td></tr>
+                    <tr><td>x %= y</td><td>x = x % y</td><td>Resto</td><td>Módulo ou resto da divisão</td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="row">
         <div class="col">
-        <table class="table table-dark table-striped"><thead><tr>
-            <th>Exemplo</th><th>Nome</th><th>Resultado</th>
+            <h4 class="w-100 text-center">Operadores de Incremento/Decremento PHP</h4>
+            <table class="table table-dark table-striped table-hover"><thead><tr>
+                <th>Operador</th><th>Nome</th><th>Resultado</th>
+            </tr></thead>
+                <tbody>
+                    <tr><td>++$x</td><td>Pré-incremento</td><td>Incrementa $x em um, e então retorna $x.</td></tr>
+                    <tr><td>$x++</td><td>Pós-incremento</td><td>Retorna $x, e então incrementa $x em um.</td></tr>
+                    <tr><td>--$x</td><td>Pré-Decremento</td><td>Decrementa $x em um, e então retorna $x.</td></tr>
+                    <tr><td>$x--</td><td>Pós-Decremento</td><td>Retorna $x, e então decrementa $x em um.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+        <h4 class="w-100 text-center">Operadores lógicos PHP</h4>
+        <table class="table table-dark table-striped table-hover"><thead><tr>
+            <th>Operador</th><th>Nome</th><th>Exemplo</th><th>Resultado</th>
         </tr></thead>
-        <tbody>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-        </tbody>
+            <tbody>
+                <tr><td>and</td><td>E</td><td>$a and $b</td><td>Verdadeiro (true) se tanto $a quanto $b são verdadeiros.</td></tr>
+                <tr><td>or</td><td>OU</td><td>$a or $b</td><td>Verdadeiro se $a ou $b são verdadeiros.</td></tr>
+                <tr><td>xor</td><td>XOR</td><td>$a xor $b</td><td>Verdadeiro se $a ou $b são verdadeiros, mas não ambos.</td></tr>
+                <tr><td>&&</td><td>And</td><td>$a && $b</td><td>Verdadeiro se tanto $a quanto $b são verdadeiros.</td></tr>
+                <tr><td>||</td><td>Or</td><td>$a || $b</td><td>Verdadeiro se $a ou $b são verdadeiros.</td></tr>
+                <tr><td>!</td><td>NÃO</td><td>! $a</td><td>Verdadeiro se $a não é verdadeiro.</td></tr>
+            </tbody>
         </table>
         </div>
-        <div class="col"></div>
-        <div class="col"></div>
     </div>
+    <div class="row">
+        <div class="col">
+        <h4 class="w-100 text-center">Operadores de comparação PHP</h4>
+        <table class="table table-dark table-striped table-hover"><thead><tr>
+            <th>Operador</th><th>Nome</th><th>Exemplo</th><th>Resultado</th>
+        </tr></thead>
+            <tbody>
+                <tr><td>==</td><td>Igual</td><td>$a == $b</td><td>Verdadeiro (true) se $a é igual a $b.</td></tr>
+                <tr><td>!=</td><td>Diferente</td><td>$a != $b</td><td>Verdadeiro se $a não é igual a $b.</td></tr>
+                <tr><td><></td><td>Diferente</td><td>$a <> $b</td><td>Verdadeiro se $a não é igual a $b.</td></tr>
+                <tr><td>===</td><td>Idêntico</td><td>$a === $b</td><td>Verdadeiro (true) se $a é igual a $b, e eles são do mesmo tipo.</td></tr>
+                <tr><td>!==</td><td>Não idêntico</td><td>$a !== $b</td><td>Verdadeiro de $a não é igual a $b, ou eles não são do mesmo tipo (introduzido no PHP4).</td></tr>
+                <tr><td>></td><td>Maior que</td><td>$a > $b</td><td>Verdadeiro se $a é estritamente maior que $b.</td></tr>
+                <tr><td><</td><td>Menor que</td><td>$a < $b</td><td>Verdadeiro se $a é estritamente menor que $b.</td></tr>
+                <tr><td>>=</td><td>Maior ou igual</td><td>$a >= $b</td><td>Verdadeiro se $a é maior ou igual a $b.</td></tr>
+                <tr><td><=</td><td>Menor ou igual</td><td>$a <= $b</td><td>Verdadeiro se $a é menor ou igual a $b.</td></tr>
+                <tr><td><=></td><td>Spaceship(nave espacial)</td><td>$a <=> $b</td><td>Um integer menor que, igual a ou maior que zero quando $a é, respectivamente, menor que, igual a ou maior que $b. Disponível a partir do PHP 7.</td></tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="col">
+        <h4 class="w-100 text-center">Operadores de string PHP</h4>
+        <table class="table table-dark table-striped table-hover"><thead><tr>
+            <th>Operador</th><th>Nome</th><th>Exemplo</th><th>Resultado</th>
+        </tr></thead>
+            <tbody>
+                <tr><td>.</td><td>Concatenação</td><td>$txt1 . $txt2</td><td>Junta uma string a outra ou a uma $variável</td></tr>
+                <tr><td>.=</td><td>atribuição de concatenaçã</td><td>$txt1 .= $txt2</td><td>acrescenta o argumento do lado direito no argumento do lado esquerdo.</td></tr>
+            </tbody>
+        </table>
+        <h4 class="w-100 text-center">Operadores de atribuição condicional PHP</h4>
+        <table class="table table-dark table-striped table-hover"><thead><tr>
+            <th>Operador</th><th>Nome</th><th>Exemplo</th><th>Resultado</th>
+        </tr></thead>
+            <tbody>
+                <tr><td>?:</td><td>Ternário</td><td>$x = expr1 ? expr2 : expr3</td><td>Retorna o valor de $x.<br>O valor de  $x é expr2 se expr1 = TRUE.<br>O valor de $x é expr3 se expr1 = FALSE</td></tr>
+                <tr><td>??</td><td>Null coalescing<br>Aglutinação nula</td><td>$x = expr1 ?? expr2</td><td>Retorna o valor de $x.<br>O valor de $x é expr1 se expr1 existir, e é não NULL. Se expr1 não existe, ou é NULL, o valor de $x é expr2.</td></tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <table class="table table-dark table-striped table-hover"><thead><tr>
+            <th>Exemplo</th><th>Nome</th><th>Resultado</th>
+        </tr></thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="col">
+        <table class="table table-dark table-striped table-hover"><thead><tr>
+            <th>Exemplo</th><th>Nome</th><th>Resultado</th>
+        </tr></thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
 
 <!--=======================================================================================================================-->
     
