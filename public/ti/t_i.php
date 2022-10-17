@@ -134,6 +134,18 @@
                         </div>
                     </div>
                 </div>
+                <!---- Accordion para o  MVC - Model View Controller -------------------------------->
+                <div class="accordion-item accordion-item2">
+                    <h2 class="accordion-header" id="h2_mvc">
+                        <button class="accordion-button accordion-button2" type="button" data-bs-toggle="collapse" data-bs-target="#mvc" aria-expanded="true" aria-controls="mvc">MVC - Model View Controller:
+                        </button>    
+                    </h2>
+                    <div id="mvc" class="accordion-collapse collapse" aria-labelledby="h2_mvc" data-bs-parent="#accordion_soft">
+                        <div class="accordion-body">
+                            <strong>MVC .</strong> Depois eu vou procurar as deefinições adequadas para listar nesta parte do meu site ....................................
+                        </div>
+                    </div>
+                </div>
                 
             </div>
     </section>
