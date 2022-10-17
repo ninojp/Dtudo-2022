@@ -142,7 +142,8 @@
                     </h2>
                     <div id="mvc" class="accordion-collapse collapse" aria-labelledby="h2_mvc" data-bs-parent="#accordion_soft">
                         <div class="accordion-body">
-                            <strong>MVC .</strong> Depois eu vou procurar as deefinições adequadas para listar nesta parte do meu site ....................................
+                            <strong>MVC - Model View Controler.</strong> Model: dados/ bases de dados, View: Layaout + html + css... Controler: Regras de negócio 
+                            Depois eu vou procurar as deefinições adequadas para listar nesta parte do meu site ....................................
                         </div>
                     </div>
                 </div>
