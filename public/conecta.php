@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "anime_bd";
+$dbname = "dtudo_bd";
 $port = "3306";
 try{
 	//Conexão com a PORTA
