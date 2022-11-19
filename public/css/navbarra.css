@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* `Como este vai carreagar em todas as paginas eu ESTOU deixando as definições GERAIS DO CSS AQUI
-e NO PHP do navbarra.PHP, como carrear o BOOTSTRAP CSS e SCRIPT, FONT-AWESOME e GOOGLE FONTs*/
+/* vai carregar em todas as paginas, ESTOU deixando as definições GERAIS DO CSS AQUI
+e NO PHP do navbarra.PHP, como carrear o BOOTSTRAP CSS e SCRIPT, FONT-AWESOME e GOOGLE FONTs */
 /* Google Fontes escolhidas
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Cutive Mono', monospace;
