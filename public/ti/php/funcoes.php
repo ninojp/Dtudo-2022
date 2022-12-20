@@ -5,7 +5,10 @@
         <h4>Lista completa de funções para trabalhar com Strings:</h4>
         <h3><a href="https://www.php.net/manual/pt_BR/ref.strings.php" target="blank"> Manual do PHP</a> - <a href="https://www.php.net/manual/pt_BR/ref.mbstring.php" target="https://www.php.net/manual/pt_BR/ref.mbstring.php">MultiByte</a> - <a href="https://www.w3schools.com/PhP/php_ref_string.asp" target="">W3schools list</a></h3>
 
-        A Função strlen() serve para fazer a contagem de caracteres de uma string
+        <h4>A Função date('d/m/Y H:i;s', strtotime($variavel_orig_data)), serve para converter o FORMATO da data e hora!</h4>
+        <p>depois eu complemento certinho... foi apenas para não esquecer</p>
+
+        <h4>A Função strlen() serve para fazer a contagem de caracteres de uma string</h4>
         <?php $v_frase = "Caracteres sem acentuação";
         printf($v_frase);
         $v_str_frase = strlen($v_frase);

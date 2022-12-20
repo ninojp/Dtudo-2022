@@ -1,4 +1,15 @@
 <section class="sec_princ">
+    <h2 class="">Instalando e configurando o PHP</h2>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <p>Para executar o PHP Localmente no Desktop(Linux, Mac, Windows), basta instalar um pacote como o XAMPP ou WAMP, que contem os serviços e feramentas necessários(APACHE, PHP, MySQL)</p>
+            <p>Para verificar todos os detalhes da versão atual do PHP execute a função do PHP: phpinfo()</p>
+            <p>Para configurar o Servidor APACHE com a DATA e hora local: Brasil. No XAMPP, click no CONFIG -> PHP (php.ini), próximo do final do arquivo (atual, na linha 1972), por default vem definido como: [Date] TIMEZONE=EUROPE -> Defina como abaixo <br>
+             [Date] date.timezone=America/Sao_Paulo</p>
+            <p>Para fazer o DEBUG de forma um pouco mais avançada instale a extensão: xdebug, para detalhes entro no site: https://xdebug.org/ </p>
+        </div>
+    </div>
+
     <h2 class="">Tags de comentário do PHP</h2>
     <div class="row">
         <div class="col"><!-- Os comentários no HTML são neste formato -->
