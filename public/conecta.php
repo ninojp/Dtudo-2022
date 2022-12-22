@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "root";
-$pass = "";
+$user = "NinoJP";
+$pass = "3RtsEpuR21!@";
 $dbname = "dtudo_bd";
 $port = "3306";
 try{
