@@ -6,7 +6,12 @@
             <p>Para verificar todos os detalhes da versão atual do PHP execute a função do PHP: phpinfo()</p>
             <p>Para configurar o Servidor APACHE com a DATA e hora local: Brasil. No XAMPP, click no CONFIG -> PHP (php.ini), próximo do final do arquivo (atual, na linha 1972), por default vem definido como: [Date] TIMEZONE=EUROPE -> Defina como abaixo <br>
              [Date] date.timezone=America/Sao_Paulo</p>
-            <p>Para fazer o DEBUG de forma um pouco mais avançada instale a extensão: xdebug, para detalhes entro no site: https://xdebug.org/ </p>
+            <p>Para fazer o DEBUG de forma um pouco mais avançada instale a extensão: xdebug, para detalhes entro no site: https://xdebug.org/ <BR>
+            Instruções - https://xdebug.org/wizard - Esta página ajuda você a encontrar qual arquivo baixar e como configurar o PHP para executar o Xdebug.<br> Cole a saída completa de phpinfo() (pode selecionar todo resultado direto do browser mesmo, a fonte HTML ou php -i) e envie o formulário para receber instruções personalizadas de download e instalação.<br>
+            1. Baixe o (arquivo recomendado.dll)<br>
+            2. Mova o arquivo baixado para C:\xampp\php\ext e renomeie-o para php_xdebug.dll<br>
+            3. Neste arquivo, neste endereço - C:\xampp\php\php.ini - Adicione a linha:   zend_extension = xdebug<br>
+            4. Reinicie o servidor Web Apache</p>
         </div>
     </div>
 
